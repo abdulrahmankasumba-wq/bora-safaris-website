@@ -1,0 +1,1418 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Packages Directory | Bora East Africa Safaris</title>
+    <meta name="description"
+        content="Browse our complete directory of 22 expert African safari packages across Uganda, Rwanda, and Combined cross-border itineraries from Bora East Africa Safaris.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/safari-list.css">
+    <link rel="stylesheet" href="css/articles.css">
+</head>
+
+<body class="safaris-directory-page">
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="tour image/logo/Bora Safaris Gorilla Adventure Logo.png" alt="Bora East Africa Safaris" class="logo-img"></a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="safaris.html" class="active">Safaris</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="nkonya-homestay.html">Homestay</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Safari Packages Hero Banner -->
+        <section class="safari-hub-hero">
+            <div class="safari-hub-hero__bg"></div>
+            <div class="safari-hub-hero__overlay"></div>
+            <div class="container safari-hub-hero__container">
+                <div class="safari-hub-hero__content">
+                    <span class="safari-hub-hero__eyebrow"><i class="fas fa-compass"></i> HANDCRAFTED ITINERARIES</span>
+                    <h1>Safari Packages &amp; Expeditions</h1>
+                    <p class="safari-hub-hero__lead">Browse our complete directory of 22 signature safari itineraries across Uganda, Rwanda, and Combined East Africa adventures — from intimate mountain gorilla treks to boundless savannah game drives.</p>
+                    <div class="safari-hub-hero__tags">
+                        <span class="safari-hero-pill"><i class="fas fa-paw"></i> Mountain Gorilla Treks</span>
+                        <span class="safari-hero-pill"><i class="fas fa-binoculars"></i> Big 5 Game Drives</span>
+                        <span class="safari-hero-pill"><i class="fas fa-dove"></i> Chimps &amp; Birding</span>
+                        <span class="safari-hero-pill"><i class="fas fa-sliders-h"></i> 100% Tailor-Made</span>
+                    </div>
+                </div>
+                <div class="safari-hub-hero__visual">
+                    <div class="safari-hero-card safari-hero-card--primary">
+                        <div class="safari-hero-card__img-box">
+                            <img src="tour image/hero/bwindi silverback gorilla.png" alt="Mountain Gorilla in Bwindi Impenetrable National Park" loading="eager">
+                        </div>
+                        <div class="safari-hero-card__caption">
+                            <span class="safari-hero-card__tag">Primate Trekking</span>
+                            <span class="safari-hero-card__title">Bwindi &amp; Mgahinga Gorillas</span>
+                        </div>
+                    </div>
+                    <div class="safari-hero-card safari-hero-card--secondary">
+                        <div class="safari-hero-card__img-box">
+                            <img src="tour image/hero/giraffe sunset.jpeg" alt="Giraffes across African savanna at sunset" loading="eager">
+                        </div>
+                        <div class="safari-hero-card__caption">
+                            <span class="safari-hero-card__tag">Classic Savanna</span>
+                            <span class="safari-hero-card__title">Murchison &amp; Queen Elizabeth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Directory Section -->
+        <section id="packages" class="packages-hub-section" style="scroll-margin-top: 140px;">
+            <div class="container">
+                
+                <div class="packages-directory-wrap">
+                    
+                    <!-- Solid White Intro & Filter Card -->
+                    <div class="safaris-intro-card">
+                        <div class="section-header center-text" style="text-align: center; margin-bottom: 2rem;">
+                            <span class="articles-eyebrow">TOUR DIRECTORY</span>
+                            <h2>Explore Our Safari Packages</h2>
+                            <div class="divider" style="width: 80px; height: 3px; background-color: var(--color-secondary); margin: 1rem auto;"></div>
+                            <p class="section-subtitle" style="max-width: 760px; margin: 0 auto; color: var(--color-text-muted); font-size: 1.05rem;">
+                                Select any safari package below to view its full day-by-day itinerary, trip highlights, pricing inclusions, and direct booking options.
+                            </p>
+                        </div>
+
+                        <!-- Unified Filter Bar -->
+                        <div class="pkg-unified-filter-bar">
+                            <div class="pkg-filter-dropdown-wrap" id="pkg-filter-dropdown-wrap">
+                                <button class="pkg-filter-toggle-btn" id="pkg-filter-toggle-btn" aria-haspopup="true" aria-expanded="false" aria-controls="pkg-filter-panel">
+                                    <i class="fas fa-sliders-h"></i>
+                                    <span>Filter Packages</span>
+                                    <span class="pkg-active-badge" id="pkg-active-badge" style="display:none;">0</span>
+                                    <i class="fas fa-chevron-down pkg-filter-chevron" id="pkg-filter-chevron"></i>
+                                </button>
+
+                                <!-- Dropdown Panel -->
+                                <div class="pkg-filter-panel" id="pkg-filter-panel" role="dialog" aria-label="Filter options" style="display:none;">
+                                    <div class="pkg-filter-panel__header">
+                                        <span><i class="fas fa-sliders-h"></i> Filter Options</span>
+                                        <button class="pkg-filter-panel__close" id="pkg-filter-close" title="Close filters" aria-label="Close filters">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Destination Filter -->
+                                    <div class="pkg-filter-group">
+                                        <p class="pkg-filter-group__label"><i class="fas fa-map-marker-alt"></i> Destination</p>
+                                        <div class="pkg-filter-group__options">
+                                            <button class="pkg-opt-btn active" data-filter-type="category" data-value="all">
+                                                <i class="fas fa-compass"></i> All Packages
+                                            </button>
+                                            <button class="pkg-opt-btn" data-filter-type="category" data-value="uganda">
+                                                <i class="fas fa-map-marker-alt"></i> Uganda (13)
+                                            </button>
+                                            <button class="pkg-opt-btn" data-filter-type="category" data-value="rwanda">
+                                                <i class="fas fa-mountain"></i> Rwanda (6)
+                                            </button>
+                                            <button class="pkg-opt-btn" data-filter-type="category" data-value="combined">
+                                                <i class="fas fa-globe-africa"></i> Combined (3)
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Duration Filter -->
+                                    <div class="pkg-filter-group">
+                                        <p class="pkg-filter-group__label"><i class="far fa-calendar-alt"></i> Duration</p>
+                                        <div class="pkg-filter-group__options">
+                                            <button class="pkg-opt-btn active" data-filter-type="duration" data-value="all">
+                                                Any Length
+                                            </button>
+                                            <button class="pkg-opt-btn" data-filter-type="duration" data-value="short">
+                                                2–4 Days
+                                            </button>
+                                            <button class="pkg-opt-btn" data-filter-type="duration" data-value="medium">
+                                                5–8 Days
+                                            </button>
+                                            <button class="pkg-opt-btn" data-filter-type="duration" data-value="long">
+                                                9+ Days
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Keyword Search -->
+                                    <div class="pkg-filter-group">
+                                        <p class="pkg-filter-group__label"><i class="fas fa-search"></i> Search</p>
+                                        <div class="pkg-filter-search-wrap">
+                                            <i class="fas fa-search pkg-filter-search-icon"></i>
+                                            <input type="text" id="pkg-search-input" class="pkg-filter-search-input" placeholder="e.g. Gorillas, Murchison, Chimps…" aria-label="Search tour packages">
+                                            <button id="pkg-search-clear" class="pkg-filter-search-clear" style="display:none;" title="Clear search" aria-label="Clear search">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Panel Footer -->
+                                    <div class="pkg-filter-panel__footer">
+                                        <button class="pkg-filter-reset-btn" id="pkg-reset-filters-btn">
+                                            <i class="fas fa-undo"></i> Reset All
+                                        </button>
+                                        <button class="pkg-filter-apply-btn" id="pkg-filter-apply-btn">
+                                            Apply Filters
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Active Filters Summary Chips -->
+                            <div class="pkg-active-chips" id="pkg-active-chips"></div>
+                        </div>
+
+                        <!-- Package Counter / Active filter summary & View Toggle -->
+                        <div class="pkg-results-bar">
+                            <span id="pkg-count-display">Showing <strong>22</strong> of <strong>22</strong> safari packages</span>
+
+                            <div class="pkg-view-toggle" role="group" aria-label="Safari package view layout">
+                                <button type="button" class="pkg-view-btn active" id="view-toggle-list" data-view="list" aria-pressed="true" title="Switch to List View">
+                                    <i class="fas fa-list-ul"></i>
+                                    <span>List View</span>
+                                </button>
+                                <button type="button" class="pkg-view-btn" id="view-toggle-cards" data-view="cards" aria-pressed="false" title="Switch to Card View">
+                                    <i class="fas fa-th-large"></i>
+                                    <span>Card View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-Column Section: Safari Packages Directory + Alongside Showcase -->
+                    <div class="safaris-layout-grid">
+                        <div class="safaris-main-column">
+                            <!-- Packages Directory Container: 3 Destination Sections -->
+                            <div class="pkg-directory-container" id="packages-list-container">
+
+                        <!-- Section 1: African Safaris in Uganda -->
+                        <section class="pkg-category-group" id="group-uganda" data-category-group="uganda">
+                            <div class="pkg-category-header">
+                                <h2 class="pkg-category-title"><i class="fas fa-map-marker-alt"></i> African Safaris in Uganda</h2>
+                                <span class="pkg-category-count">13 Itineraries</span>
+                            </div>
+                            <div class="pkg-category-list">
+                                
+                        <!-- Package Row: 15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari -->
+                        <a href="packages/package-1.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-1"
+                           data-category="uganda" 
+                           data-duration="long" 
+                           data-days="15"
+                           data-keywords="15 days uganda gorilla, chimpanzee &amp; big 5 safari entebbe • murchison falls • kibale • queen elizabeth • bwindi • lake bunyonyi • lake mburo gorilla trekking chimp tracking big 5 safari nile boat cruise lake bunyonyi"
+                           title="Click to view complete itinerary for 15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 11 Days Best of Uganda Safari -->
+                        <a href="packages/package-2.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-2"
+                           data-category="uganda" 
+                           data-duration="long" 
+                           data-days="11"
+                           data-keywords="11 days best of uganda safari entebbe • kibale forest • queen elizabeth • bwindi • mgahinga • lake mutanda • kampala chimps in kibale kazinga channel tree-climbing lions bwindi gorillas golden monkeys"
+                           title="Click to view complete itinerary for 11 Days Best of Uganda Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">11 Days Best of Uganda Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 8 Days Uganda Gorilla Habituation, Wildlife &amp; Chimpanzee Trekking Safari -->
+                        <a href="packages/package-3.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-3"
+                           data-category="uganda" 
+                           data-duration="medium" 
+                           data-days="8"
+                           data-keywords="8 days uganda gorilla habituation, wildlife &amp; chimpanzee trekking safari entebbe • murchison falls • kibale • queen elizabeth • bwindi forest • kampala 4-hour gorilla habituation murchison falls kibale chimps kasenyi plains"
+                           title="Click to view complete itinerary for 8 Days Uganda Gorilla Habituation, Wildlife &amp; Chimpanzee Trekking Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">8 Days Uganda Gorilla Habituation, Wildlife &amp; Chimpanzee Trekking Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 6 Days Uganda Package – Jinja &amp; Bwindi -->
+                        <a href="packages/package-4.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-4"
+                           data-category="uganda" 
+                           data-duration="medium" 
+                           data-days="6"
+                           data-keywords="6 days uganda package – jinja &amp; bwindi entebbe • jinja • mbarara • bwindi impenetrable np • kampala source of the nile mountain gorilla trek equator crossing buhoma lodge"
+                           title="Click to view complete itinerary for 6 Days Uganda Package – Jinja &amp; Bwindi">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">6 Days Uganda Package – Jinja &amp; Bwindi</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 6 Days Uganda Cultural Tour – Eastern Uganda -->
+                        <a href="packages/package-5.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-5"
+                           data-category="uganda" 
+                           data-duration="medium" 
+                           data-days="6"
+                           data-keywords="6 days uganda cultural tour – eastern uganda entebbe • kampala city • mbale • budadiri mountain villages • kampala kampala heritage budadiri cultural walk bagisu traditions waterfalls experience"
+                           title="Click to view complete itinerary for 6 Days Uganda Cultural Tour – Eastern Uganda">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">6 Days Uganda Cultural Tour – Eastern Uganda</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 5 Days Uganda – Kibale &amp; Bwindi Tour -->
+                        <a href="packages/package-6.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-6"
+                           data-category="uganda" 
+                           data-duration="medium" 
+                           data-days="5"
+                           data-keywords="5 days uganda – kibale &amp; bwindi tour kampala • fort portal • kibale forest • ishasha sector • bwindi buhoma kibale chimpanzees bigodi wetland birds ishasha lions bwindi gorilla encounter"
+                           title="Click to view complete itinerary for 5 Days Uganda – Kibale &amp; Bwindi Tour">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">5 Days Uganda – Kibale &amp; Bwindi Tour</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 5 Days Uganda Primates &amp; Wildlife Safari – Kibale &amp; Queen Elizabeth -->
+                        <a href="packages/package-7.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-7"
+                           data-category="uganda" 
+                           data-duration="medium" 
+                           data-days="5"
+                           data-keywords="5 days uganda primates &amp; wildlife safari – kibale &amp; queen elizabeth kampala • kibale forest • queen elizabeth np • bwindi buhoma chimp tracking queen elizabeth game drive savannah wildlife bwindi gorillas"
+                           title="Click to view complete itinerary for 5 Days Uganda Primates &amp; Wildlife Safari – Kibale &amp; Queen Elizabeth">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">5 Days Uganda Primates &amp; Wildlife Safari – Kibale &amp; Queen Elizabeth</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 4 Days Uganda Gorilla &amp; Chimpanzee Trekking Safari -->
+                        <a href="packages/package-8.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-8"
+                           data-category="uganda" 
+                           data-duration="short" 
+                           data-days="4"
+                           data-keywords="4 days uganda gorilla &amp; chimpanzee trekking safari kampala • kibale forest • kigezi highlands • bwindi impenetrable np kibale chimpanzees bwindi mountain gorillas kigezi highlands equator monument"
+                           title="Click to view complete itinerary for 4 Days Uganda Gorilla &amp; Chimpanzee Trekking Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">4 Days Uganda Gorilla &amp; Chimpanzee Trekking Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 3 Days Uganda Gorilla Trekking Safari – Bwindi -->
+                        <a href="packages/package-9.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-9"
+                           data-category="uganda" 
+                           data-duration="short" 
+                           data-days="3"
+                           data-keywords="3 days uganda gorilla trekking safari – bwindi kampala • mbarara • bwindi buhoma • kampala 1-hour gorilla encounter rainforest trekking scenic kigezi hills equator stop"
+                           title="Click to view complete itinerary for 3 Days Uganda Gorilla Trekking Safari – Bwindi">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">3 Days Uganda Gorilla Trekking Safari – Bwindi</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 3 Days Murchison Falls National Park Safari -->
+                        <a href="packages/package-10.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-10"
+                           data-category="uganda" 
+                           data-duration="short" 
+                           data-days="3"
+                           data-keywords="3 days murchison falls national park safari kampala • murchison falls np • nile river safari • kampala top of the falls savannah game drive nile boat cruise hippos &amp; crocodiles"
+                           title="Click to view complete itinerary for 3 Days Murchison Falls National Park Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">3 Days Murchison Falls National Park Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 3 Days Queen Elizabeth National Park Safari -->
+                        <a href="packages/package-11.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-11"
+                           data-category="uganda" 
+                           data-duration="short" 
+                           data-days="3"
+                           data-keywords="3 days queen elizabeth national park safari kampala • mbarara • queen elizabeth np • kazinga channel kasenyi game drive kazinga channel boat elephants &amp; lions equator monument"
+                           title="Click to view complete itinerary for 3 Days Queen Elizabeth National Park Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">3 Days Queen Elizabeth National Park Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 3 Days Lake Mburo Safari -->
+                        <a href="packages/package-12.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-12"
+                           data-category="uganda" 
+                           data-duration="short" 
+                           data-days="3"
+                           data-keywords="3 days lake mburo safari kampala • equator • lake mburo np • mbarara • kampala zebras &amp; impalas lake mburo boat cruise kampala city tour equator demonstration"
+                           title="Click to view complete itinerary for 3 Days Lake Mburo Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">3 Days Lake Mburo Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 3 Days Kibale Chimpanzee Safari -->
+                        <a href="packages/package-13.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-13"
+                           data-category="uganda" 
+                           data-duration="short" 
+                           data-days="3"
+                           data-keywords="3 days kibale chimpanzee safari kampala • fort portal • kibale forest • kampala kibale chimp tracking fort portal crater lakes bigodi wetland walk equator stop"
+                           title="Click to view complete itinerary for 3 Days Kibale Chimpanzee Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">3 Days Kibale Chimpanzee Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                            </div>
+                            <!-- Card View Grid -->
+                            <div class="pkg-category-cards" style="display: none;">
+                                <!-- Card: 15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-1" 
+                                         data-category="uganda" 
+                                         data-duration="long" 
+                                         data-days="15" 
+                                         data-keywords="15 days uganda gorilla, chimpanzee &amp; big 5 safari entebbe • murchison falls • kibale • queen elizabeth • bwindi • lake bunyonyi • lake mburo gorilla trekking chimp tracking big 5 safari nile boat cruise lake bunyonyi">
+                                    <a href="packages/package-1.html" class="pkg-card__link" aria-label="View 15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/gorilla and baby.jpeg" alt="Mountain gorilla with baby in Bwindi Impenetrable National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 15 DAYS / 14 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Entebbe • Murchison Falls • Kibale • Queen Elizabeth • Bwindi • Lake Bunyonyi • Lake Mburo</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Gorilla Trekking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Chimp Tracking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Big 5 Safari</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 11 Days Best of Uganda Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-2" 
+                                         data-category="uganda" 
+                                         data-duration="long" 
+                                         data-days="11" 
+                                         data-keywords="11 days best of uganda safari entebbe • kibale forest • queen elizabeth • bwindi • mgahinga • lake mutanda • kampala chimps in kibale kazinga channel tree-climbing lions bwindi gorillas golden monkeys">
+                                    <a href="packages/package-2.html" class="pkg-card__link" aria-label="View 11 Days Best of Uganda Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/tree climb lion queen elizabeth.jpg" alt="Tree-climbing lion in Queen Elizabeth National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 11 DAYS / 10 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">11 Days Best of Uganda Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Entebbe • Kibale Forest • Queen Elizabeth • Bwindi • Mgahinga • Lake Mutanda • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Chimps in Kibale</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Kazinga Channel</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Tree-Climbing Lions</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 8 Days Uganda Gorilla Habituation, Wildlife &amp; Chimpanzee Trekking Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-3" 
+                                         data-category="uganda" 
+                                         data-duration="medium" 
+                                         data-days="8" 
+                                         data-keywords="8 days uganda gorilla habituation, wildlife &amp; chimpanzee trekking safari entebbe • murchison falls • kibale • queen elizabeth • bwindi forest • kampala 4-hour gorilla habituation murchison falls kibale chimps kasenyi plains">
+                                    <a href="packages/package-3.html" class="pkg-card__link" aria-label="View 8 Days Uganda Gorilla Habituation, Wildlife &amp; Chimpanzee Trekking Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/bwindi silverback gorilla.png" alt="Silverback mountain gorilla in Bwindi rainforest" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 8 DAYS / 7 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">8 Days Uganda Gorilla Habituation, Wildlife &amp; Chimpanzee Trekking Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Entebbe • Murchison Falls • Kibale • Queen Elizabeth • Bwindi Forest • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>4-Hour Gorilla Habituation</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Murchison Falls</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Kibale Chimps</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 6 Days Uganda Package – Jinja &amp; Bwindi -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-4" 
+                                         data-category="uganda" 
+                                         data-duration="medium" 
+                                         data-days="6" 
+                                         data-keywords="6 days uganda package – jinja &amp; bwindi entebbe • jinja • mbarara • bwindi impenetrable np • kampala source of the nile mountain gorilla trek equator crossing buhoma lodge">
+                                    <a href="packages/package-4.html" class="pkg-card__link" aria-label="View 6 Days Uganda Package – Jinja &amp; Bwindi">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rafting-1 nile.jpg" alt="Source of the Nile adventure in Jinja" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 6 DAYS / 5 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">6 Days Uganda Package – Jinja &amp; Bwindi</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Entebbe • Jinja • Mbarara • Bwindi Impenetrable NP • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Source of the Nile</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Mountain Gorilla Trek</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Equator Crossing</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 6 Days Uganda Cultural Tour – Eastern Uganda -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-5" 
+                                         data-category="uganda" 
+                                         data-duration="medium" 
+                                         data-days="6" 
+                                         data-keywords="6 days uganda cultural tour – eastern uganda entebbe • kampala city • mbale • budadiri mountain villages • kampala kampala heritage budadiri cultural walk bagisu traditions waterfalls experience">
+                                    <a href="packages/package-5.html" class="pkg-card__link" aria-label="View 6 Days Uganda Cultural Tour – Eastern Uganda">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/sipi falls.png" alt="Spectacular waterfalls and lush slopes of Mount Elgon in Eastern Uganda" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 6 DAYS / 5 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">6 Days Uganda Cultural Tour – Eastern Uganda</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Entebbe • Kampala City • Mbale • Budadiri Mountain Villages • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Kampala Heritage</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Budadiri Cultural Walk</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Bagisu Traditions</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 5 Days Uganda – Kibale &amp; Bwindi Tour -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-6" 
+                                         data-category="uganda" 
+                                         data-duration="medium" 
+                                         data-days="5" 
+                                         data-keywords="5 days uganda – kibale &amp; bwindi tour kampala • fort portal • kibale forest • ishasha sector • bwindi buhoma kibale chimpanzees bigodi wetland birds ishasha lions bwindi gorilla encounter">
+                                    <a href="packages/package-6.html" class="pkg-card__link" aria-label="View 5 Days Uganda – Kibale &amp; Bwindi Tour">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/kibale monkey 2.webp" alt="Primate in Kibale Forest National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 5 DAYS / 4 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">5 Days Uganda – Kibale &amp; Bwindi Tour</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Fort Portal • Kibale Forest • Ishasha Sector • Bwindi Buhoma</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Kibale Chimpanzees</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Bigodi Wetland Birds</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Ishasha Lions</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 5 Days Uganda Primates &amp; Wildlife Safari – Kibale &amp; Queen Elizabeth -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-7" 
+                                         data-category="uganda" 
+                                         data-duration="medium" 
+                                         data-days="5" 
+                                         data-keywords="5 days uganda primates &amp; wildlife safari – kibale &amp; queen elizabeth kampala • kibale forest • queen elizabeth np • bwindi buhoma chimp tracking queen elizabeth game drive savannah wildlife bwindi gorillas">
+                                    <a href="packages/package-7.html" class="pkg-card__link" aria-label="View 5 Days Uganda Primates &amp; Wildlife Safari – Kibale &amp; Queen Elizabeth">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/chimp.jpeg" alt="Wild chimpanzee resting in Kibale rainforest canopy" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 5 DAYS / 4 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">5 Days Uganda Primates &amp; Wildlife Safari – Kibale &amp; Queen Elizabeth</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Kibale Forest • Queen Elizabeth NP • Bwindi Buhoma</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Chimp Tracking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Queen Elizabeth Game Drive</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Savannah Wildlife</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 4 Days Uganda Gorilla &amp; Chimpanzee Trekking Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-8" 
+                                         data-category="uganda" 
+                                         data-duration="short" 
+                                         data-days="4" 
+                                         data-keywords="4 days uganda gorilla &amp; chimpanzee trekking safari kampala • kibale forest • kigezi highlands • bwindi impenetrable np kibale chimpanzees bwindi mountain gorillas kigezi highlands equator monument">
+                                    <a href="packages/package-8.html" class="pkg-card__link" aria-label="View 4 Days Uganda Gorilla &amp; Chimpanzee Trekking Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/gorilla eating.jpeg" alt="Mountain gorilla feeding peacefully in Bwindi" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 4 DAYS / 3 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">4 Days Uganda Gorilla &amp; Chimpanzee Trekking Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Kibale Forest • Kigezi Highlands • Bwindi Impenetrable NP</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Kibale Chimpanzees</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Bwindi Mountain Gorillas</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Kigezi Highlands</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 3 Days Uganda Gorilla Trekking Safari – Bwindi -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-9" 
+                                         data-category="uganda" 
+                                         data-duration="short" 
+                                         data-days="3" 
+                                         data-keywords="3 days uganda gorilla trekking safari – bwindi kampala • mbarara • bwindi buhoma • kampala 1-hour gorilla encounter rainforest trekking scenic kigezi hills equator stop">
+                                    <a href="packages/package-9.html" class="pkg-card__link" aria-label="View 3 Days Uganda Gorilla Trekking Safari – Bwindi">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/gorilla and baby.jpeg" alt="Mountain gorilla family in Bwindi" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 3 DAYS / 2 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">3 Days Uganda Gorilla Trekking Safari – Bwindi</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Mbarara • Bwindi Buhoma • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>1-Hour Gorilla Encounter</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Rainforest Trekking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Scenic Kigezi Hills</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 3 Days Murchison Falls National Park Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-10" 
+                                         data-category="uganda" 
+                                         data-duration="short" 
+                                         data-days="3" 
+                                         data-keywords="3 days murchison falls national park safari kampala • murchison falls np • nile river safari • kampala top of the falls savannah game drive nile boat cruise hippos &amp; crocodiles">
+                                    <a href="packages/package-10.html" class="pkg-card__link" aria-label="View 3 Days Murchison Falls National Park Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/muchsion falls.jpeg" alt="Thundering Murchison Falls Nile river" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 3 DAYS / 2 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">3 Days Murchison Falls National Park Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Murchison Falls NP • Nile River Safari • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Top of the Falls</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Savannah Game Drive</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Nile Boat Cruise</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 3 Days Queen Elizabeth National Park Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-11" 
+                                         data-category="uganda" 
+                                         data-duration="short" 
+                                         data-days="3" 
+                                         data-keywords="3 days queen elizabeth national park safari kampala • mbarara • queen elizabeth np • kazinga channel kasenyi game drive kazinga channel boat elephants &amp; lions equator monument">
+                                    <a href="packages/package-11.html" class="pkg-card__link" aria-label="View 3 Days Queen Elizabeth National Park Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/tree climb lion queen elizabeth.jpg" alt="Wildlife in Queen Elizabeth National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 3 DAYS / 2 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">3 Days Queen Elizabeth National Park Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Mbarara • Queen Elizabeth NP • Kazinga Channel</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Kasenyi Game Drive</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Kazinga Channel Boat</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Elephants & Lions</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 3 Days Lake Mburo Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-12" 
+                                         data-category="uganda" 
+                                         data-duration="short" 
+                                         data-days="3" 
+                                         data-keywords="3 days lake mburo safari kampala • equator • lake mburo np • mbarara • kampala zebras &amp; impalas lake mburo boat cruise kampala city tour equator demonstration">
+                                    <a href="packages/package-12.html" class="pkg-card__link" aria-label="View 3 Days Lake Mburo Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/Zebras-in-Lake-Mburo-NP.jpg" alt="Plains zebras grazing in Lake Mburo National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 3 DAYS / 2 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">3 Days Lake Mburo Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Equator • Lake Mburo NP • Mbarara • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Zebras & Impalas</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Lake Mburo Boat Cruise</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Kampala City Tour</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 3 Days Kibale Chimpanzee Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-13" 
+                                         data-category="uganda" 
+                                         data-duration="short" 
+                                         data-days="3" 
+                                         data-keywords="3 days kibale chimpanzee safari kampala • fort portal • kibale forest • kampala kibale chimp tracking fort portal crater lakes bigodi wetland walk equator stop">
+                                    <a href="packages/package-13.html" class="pkg-card__link" aria-label="View 3 Days Kibale Chimpanzee Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/chimps.jpeg" alt="Chimpanzee group in Kibale National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 3 DAYS / 2 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">3 Days Kibale Chimpanzee Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kampala • Fort Portal • Kibale Forest • Kampala</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Kibale Chimp Tracking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Fort Portal Crater Lakes</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Bigodi Wetland Walk</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </section>
+
+                        <!-- Section 2: African Safaris in Rwanda -->
+                        <section class="pkg-category-group" id="group-rwanda" data-category-group="rwanda">
+                            <div class="pkg-category-header">
+                                <h2 class="pkg-category-title"><i class="fas fa-mountain"></i> African Safaris in Rwanda</h2>
+                                <span class="pkg-category-count">6 Itineraries</span>
+                            </div>
+                            <div class="pkg-category-list">
+                                
+                        <!-- Package Row: 10 Days Rwanda Safari – Akagera, Nyungwe, Volcanoes &amp; Lake Kivu -->
+                        <a href="packages/package-14.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-14"
+                           data-category="rwanda" 
+                           data-duration="long" 
+                           data-days="10"
+                           data-keywords="10 days rwanda safari – akagera, nyungwe, volcanoes &amp; lake kivu kigali • akagera np • nyungwe forest • musanze volcanoes • lake kivu big 5 in akagera nyungwe canopy walk volcanoes gorilla trek lake kivu islands"
+                           title="Click to view complete itinerary for 10 Days Rwanda Safari – Akagera, Nyungwe, Volcanoes &amp; Lake Kivu">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">10 Days Rwanda Safari – Akagera, Nyungwe, Volcanoes &amp; Lake Kivu</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera -->
+                        <a href="packages/package-15.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-15"
+                           data-category="rwanda" 
+                           data-duration="medium" 
+                           data-days="7"
+                           data-keywords="7 days rwanda – nyungwe, volcanoes &amp; akagera kigali • nyungwe forest • musanze • volcanoes np • akagera np chimp tracking canopy walkway mountain gorillas golden monkeys akagera savannah"
+                           title="Click to view complete itinerary for 7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 7 Days Rwanda – Akagera, Volcanoes &amp; Nyungwe -->
+                        <a href="packages/package-16.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-16"
+                           data-category="rwanda" 
+                           data-duration="medium" 
+                           data-days="7"
+                           data-keywords="7 days rwanda – akagera, volcanoes &amp; nyungwe kigali • akagera np • musanze • volcanoes np • nyungwe forest big 5 game drive volcanoes gorilla trek golden monkeys nyungwe chimpanzees"
+                           title="Click to view complete itinerary for 7 Days Rwanda – Akagera, Volcanoes &amp; Nyungwe">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">7 Days Rwanda – Akagera, Volcanoes &amp; Nyungwe</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 6 Days Rwanda – Akagera &amp; Volcanoes -->
+                        <a href="packages/package-17.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-17"
+                           data-category="rwanda" 
+                           data-duration="medium" 
+                           data-days="6"
+                           data-keywords="6 days rwanda – akagera &amp; volcanoes kigali • akagera np • musanze • volcanoes np • gisenyi lake kivu akagera game drive lake ihema boat cruise gorilla trekking lake kivu gisenyi"
+                           title="Click to view complete itinerary for 6 Days Rwanda – Akagera &amp; Volcanoes">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">6 Days Rwanda – Akagera &amp; Volcanoes</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 3 Days Rwanda Gorilla Trek – Volcanoes -->
+                        <a href="packages/package-18.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-18"
+                           data-category="rwanda" 
+                           data-duration="short" 
+                           data-days="3"
+                           data-keywords="3 days rwanda gorilla trek – volcanoes kigali • musanze • volcanoes national park • kigali gorilla trekking golden monkeys iby’iwacu cultural village kigali city tour"
+                           title="Click to view complete itinerary for 3 Days Rwanda Gorilla Trek – Volcanoes">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">3 Days Rwanda Gorilla Trek – Volcanoes</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 2 Days Akagera National Park -->
+                        <a href="packages/package-19.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-19"
+                           data-category="rwanda" 
+                           data-duration="short" 
+                           data-days="2"
+                           data-keywords="2 days akagera national park kigali • akagera national park • kigali kigali city tour akagera savannah drive elephants &amp; giraffes express safari"
+                           title="Click to view complete itinerary for 2 Days Akagera National Park">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">2 Days Akagera National Park</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                            </div>
+                            <!-- Card View Grid -->
+                            <div class="pkg-category-cards" style="display: none;">
+                                <!-- Card: 10 Days Rwanda Safari – Akagera, Nyungwe, Volcanoes &amp; Lake Kivu -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-14" 
+                                         data-category="rwanda" 
+                                         data-duration="long" 
+                                         data-days="10" 
+                                         data-keywords="10 days rwanda safari – akagera, nyungwe, volcanoes &amp; lake kivu kigali • akagera np • nyungwe forest • musanze volcanoes • lake kivu big 5 in akagera nyungwe canopy walk volcanoes gorilla trek lake kivu islands">
+                                    <a href="packages/package-14.html" class="pkg-card__link" aria-label="View 10 Days Rwanda Safari – Akagera, Nyungwe, Volcanoes &amp; Lake Kivu">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rwanda/volcanoes-1.jpg" alt="Volcanoes National Park mist-covered mountains" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Rwanda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 10 DAYS / 9 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">10 Days Rwanda Safari – Akagera, Nyungwe, Volcanoes &amp; Lake Kivu</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Akagera NP • Nyungwe Forest • Musanze Volcanoes • Lake Kivu</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Big 5 in Akagera</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Nyungwe Canopy Walk</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Volcanoes Gorilla Trek</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-15" 
+                                         data-category="rwanda" 
+                                         data-duration="medium" 
+                                         data-days="7" 
+                                         data-keywords="7 days rwanda – nyungwe, volcanoes &amp; akagera kigali • nyungwe forest • musanze • volcanoes np • akagera np chimp tracking canopy walkway mountain gorillas golden monkeys akagera savannah">
+                                    <a href="packages/package-15.html" class="pkg-card__link" aria-label="View 7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rwanda/nyungwe-1.jpg" alt="Canopy walk suspended above Nyungwe rainforest" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Rwanda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 7 DAYS / 6 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Nyungwe Forest • Musanze • Volcanoes NP • Akagera NP</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Chimp Tracking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Canopy Walkway</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Mountain Gorillas</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 7 Days Rwanda – Akagera, Volcanoes &amp; Nyungwe -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-16" 
+                                         data-category="rwanda" 
+                                         data-duration="medium" 
+                                         data-days="7" 
+                                         data-keywords="7 days rwanda – akagera, volcanoes &amp; nyungwe kigali • akagera np • musanze • volcanoes np • nyungwe forest big 5 game drive volcanoes gorilla trek golden monkeys nyungwe chimpanzees">
+                                    <a href="packages/package-16.html" class="pkg-card__link" aria-label="View 7 Days Rwanda – Akagera, Volcanoes &amp; Nyungwe">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rwanda/akagera-1.jpg" alt="Savannah wildlife in Akagera National Park Rwanda" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Rwanda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 7 DAYS / 6 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">7 Days Rwanda – Akagera, Volcanoes &amp; Nyungwe</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Akagera NP • Musanze • Volcanoes NP • Nyungwe Forest</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Big 5 Game Drive</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Volcanoes Gorilla Trek</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Golden Monkeys</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 6 Days Rwanda – Akagera &amp; Volcanoes -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-17" 
+                                         data-category="rwanda" 
+                                         data-duration="medium" 
+                                         data-days="6" 
+                                         data-keywords="6 days rwanda – akagera &amp; volcanoes kigali • akagera np • musanze • volcanoes np • gisenyi lake kivu akagera game drive lake ihema boat cruise gorilla trekking lake kivu gisenyi">
+                                    <a href="packages/package-17.html" class="pkg-card__link" aria-label="View 6 Days Rwanda – Akagera &amp; Volcanoes">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rwanda/akagera-1.jpg" alt="Safari game drive in Akagera National Park" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Rwanda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 6 DAYS / 5 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">6 Days Rwanda – Akagera &amp; Volcanoes</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Akagera NP • Musanze • Volcanoes NP • Gisenyi Lake Kivu</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Akagera Game Drive</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Lake Ihema Boat Cruise</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Gorilla Trekking</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 3 Days Rwanda Gorilla Trek – Volcanoes -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-18" 
+                                         data-category="rwanda" 
+                                         data-duration="short" 
+                                         data-days="3" 
+                                         data-keywords="3 days rwanda gorilla trek – volcanoes kigali • musanze • volcanoes national park • kigali gorilla trekking golden monkeys iby’iwacu cultural village kigali city tour">
+                                    <a href="packages/package-18.html" class="pkg-card__link" aria-label="View 3 Days Rwanda Gorilla Trek – Volcanoes">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rwanda/volcanoes-1.jpg" alt="Mountain gorilla trekking in Volcanoes National Park Rwanda" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Rwanda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 3 DAYS / 2 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">3 Days Rwanda Gorilla Trek – Volcanoes</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Musanze • Volcanoes National Park • Kigali</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Gorilla Trekking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Golden Monkeys</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Iby’Iwacu Cultural Village</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 2 Days Akagera National Park -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-19" 
+                                         data-category="rwanda" 
+                                         data-duration="short" 
+                                         data-days="2" 
+                                         data-keywords="2 days akagera national park kigali • akagera national park • kigali kigali city tour akagera savannah drive elephants &amp; giraffes express safari">
+                                    <a href="packages/package-19.html" class="pkg-card__link" aria-label="View 2 Days Akagera National Park">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/rwanda/akagera-1.jpg" alt="Akagera National Park wildlife safari Rwanda" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Rwanda Safari</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 2 DAYS / 1 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">2 Days Akagera National Park</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Akagera National Park • Kigali</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Kigali City Tour</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Akagera Savannah Drive</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Elephants & Giraffes</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </section>
+
+                        <!-- Section 3: Uganda & Rwanda Combined Safaris -->
+                        <section class="pkg-category-group" id="group-combined" data-category-group="combined">
+                            <div class="pkg-category-header">
+                                <h2 class="pkg-category-title"><i class="fas fa-globe-africa"></i> Uganda &amp; Rwanda Combined Safaris</h2>
+                                <span class="pkg-category-count">3 Itineraries</span>
+                            </div>
+                            <div class="pkg-category-list">
+                                
+                        <!-- Package Row: 14 Days Uganda–Rwanda Gorilla Safari -->
+                        <a href="packages/package-20.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-20"
+                           data-category="combined" 
+                           data-duration="long" 
+                           data-days="14"
+                           data-keywords="14 days uganda–rwanda gorilla safari entebbe • murchison • kibale • queen elizabeth • bwindi • musanze (rwanda) • lake kivu • kigali murchison falls kibale chimps queen elizabeth bwindi gorillas volcanoes golden monkeys"
+                           title="Click to view complete itinerary for 14 Days Uganda–Rwanda Gorilla Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">14 Days Uganda–Rwanda Gorilla Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 11 Days Rwanda &amp; Uganda Safari -->
+                        <a href="packages/package-21.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-21"
+                           data-category="combined" 
+                           data-duration="long" 
+                           data-days="11"
+                           data-keywords="11 days rwanda &amp; uganda safari kigali • volcanoes np • bwindi forest • lake bunyonyi • queen elizabeth • kibale • entebbe volcanoes gorillas (rwanda) bwindi gorillas (uganda) lake bunyonyi canoe kazinga cruise kibale chimps"
+                           title="Click to view complete itinerary for 11 Days Rwanda &amp; Uganda Safari">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">11 Days Rwanda &amp; Uganda Safari</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Package Row: 5 Days Rwanda &amp; Uganda Gorilla Trekking Tour -->
+                        <a href="packages/package-22.html" 
+                           class="pkg-list-item pkg-dir-row" 
+                           id="package-22"
+                           data-category="combined" 
+                           data-duration="medium" 
+                           data-days="5"
+                           data-keywords="5 days rwanda &amp; uganda gorilla trekking tour kigali • volcanoes np (rwanda) • bwindi forest (uganda) • kampala / entebbe dual gorilla treks (rwanda &amp; uganda) golden monkey tracking musanze bwindi ancient forest"
+                           title="Click to view complete itinerary for 5 Days Rwanda &amp; Uganda Gorilla Trekking Tour">
+                            <div class="pkg-dir-row__main">
+                                <span class="pkg-dir-bullet">&bull;</span>
+                                <span class="pkg-dir-title">5 Days Rwanda &amp; Uganda Gorilla Trekking Tour</span>
+                            </div>
+                            <div class="pkg-dir-row__meta">
+                                <span class="pkg-dir-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                            </div>
+                            <!-- Card View Grid -->
+                            <div class="pkg-category-cards" style="display: none;">
+                                <!-- Card: 14 Days Uganda–Rwanda Gorilla Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-20" 
+                                         data-category="combined" 
+                                         data-duration="long" 
+                                         data-days="14" 
+                                         data-keywords="14 days uganda–rwanda gorilla safari entebbe • murchison • kibale • queen elizabeth • bwindi • musanze (rwanda) • lake kivu • kigali murchison falls kibale chimps queen elizabeth bwindi gorillas volcanoes golden monkeys">
+                                    <a href="packages/package-20.html" class="pkg-card__link" aria-label="View 14 Days Uganda–Rwanda Gorilla Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/gorilla and baby.jpeg" alt="Cross-border Uganda and Rwanda gorilla safari" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda &amp; Rwanda</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 14 DAYS / 13 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">14 Days Uganda–Rwanda Gorilla Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Entebbe • Murchison • Kibale • Queen Elizabeth • Bwindi • Musanze (Rwanda) • Lake Kivu • Kigali</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Murchison Falls</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Kibale Chimps</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Queen Elizabeth</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 11 Days Rwanda &amp; Uganda Safari -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-21" 
+                                         data-category="combined" 
+                                         data-duration="long" 
+                                         data-days="11" 
+                                         data-keywords="11 days rwanda &amp; uganda safari kigali • volcanoes np • bwindi forest • lake bunyonyi • queen elizabeth • kibale • entebbe volcanoes gorillas (rwanda) bwindi gorillas (uganda) lake bunyonyi canoe kazinga cruise kibale chimps">
+                                    <a href="packages/package-21.html" class="pkg-card__link" aria-label="View 11 Days Rwanda &amp; Uganda Safari">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/lake bunyonyi retreat.jpg" alt="Lake Bunyonyi scenic islands in southwestern Uganda" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda &amp; Rwanda</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 11 DAYS / 10 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">11 Days Rwanda &amp; Uganda Safari</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Volcanoes NP • Bwindi Forest • Lake Bunyonyi • Queen Elizabeth • Kibale • Entebbe</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Volcanoes Gorillas (Rwanda)</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Bwindi Gorillas (Uganda)</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Lake Bunyonyi Canoe</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- Card: 5 Days Rwanda &amp; Uganda Gorilla Trekking Tour -->
+                                <article class="pkg-card-item pkg-card" 
+                                         id="card-package-22" 
+                                         data-category="combined" 
+                                         data-duration="medium" 
+                                         data-days="5" 
+                                         data-keywords="5 days rwanda &amp; uganda gorilla trekking tour kigali • volcanoes np (rwanda) • bwindi forest (uganda) • kampala / entebbe dual gorilla treks (rwanda &amp; uganda) golden monkey tracking musanze bwindi ancient forest">
+                                    <a href="packages/package-22.html" class="pkg-card__link" aria-label="View 5 Days Rwanda &amp; Uganda Gorilla Trekking Tour">
+                                        <div class="pkg-card__media">
+                                            <img src="tour image/golden money mgahinga.png" alt="Golden monkeys and mountain gorillas cross-border tour" loading="lazy" class="pkg-card__img">
+                                            <span class="pkg-card__badge-cat">Uganda &amp; Rwanda</span>
+                                            <span class="pkg-card__badge-dur"><i class="far fa-clock"></i> 5 DAYS / 4 NIGHTS</span>
+                                        </div>
+                                        <div class="pkg-card__content">
+                                            <h3 class="pkg-card__title">5 Days Rwanda &amp; Uganda Gorilla Trekking Tour</h3>
+                                            <p class="pkg-card__route">
+                                                <i class="fas fa-route"></i>
+                                                <span>Kigali • Volcanoes NP (Rwanda) • Bwindi Forest (Uganda) • Kampala / Entebbe</span>
+                                            </p>
+                                            <ul class="pkg-card__highlights">
+                                        <li><i class="fas fa-check"></i> <span>Dual Gorilla Treks (Rwanda & Uganda)</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Golden Monkey Tracking</span></li>
+                                        <li><i class="fas fa-check"></i> <span>Musanze</span></li>
+                                            </ul>
+                                            <div class="pkg-card__footer">
+                                                <span class="pkg-card__cta">View Itinerary <i class="fas fa-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </section>
+
+                            </div>
+
+                            <!-- No Results State -->
+                            <div id="pkg-no-results" class="pkg-no-results" style="display: none;">
+                                <div class="pkg-no-results-inner">
+                                    <i class="fas fa-compass pkg-no-results-icon"></i>
+                                    <h3>No Safari Packages Match Your Filter</h3>
+                                    <p>Try adjusting your destination or duration filter, or clear your search to see all 22 packages.</p>
+                                    <button class="btn btn-primary pkg-no-results-reset">
+                                        <i class="fas fa-undo"></i> Show All 22 Packages
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Complementary Image & Description Section Alongside Packages -->
+                        <aside class="safaris-sidebar-showcase" aria-label="Safari Planning & Highlights">
+                            <div class="safari-sidebar-card">
+                                <div class="safari-sidebar-card__img-wrap">
+                                    <img src="tour image/safari_activities_adventure.png" alt="Travelers on a custom African safari adventure" class="safari-sidebar-card__img" loading="lazy">
+                                    <span class="safari-sidebar-card__badge"><i class="fas fa-shield-alt"></i> Tailor-Made &amp; Private</span>
+                                </div>
+                                <div class="safari-sidebar-card__body">
+                                    <span class="safari-sidebar-card__eyebrow">TAILOR-MADE EXPERIENCES</span>
+                                    <h3 class="safari-sidebar-card__title">Crafted by Native East African Specialists</h3>
+                                    <p class="safari-sidebar-card__desc">
+                                        Every itinerary in our directory can be adapted to your schedule, group size, and preferred accommodation style. Our local safari designers customize departures with dedicated 4WD Land Cruisers and guaranteed gorilla permits.
+                                    </p>
+                                    <ul class="safari-sidebar-card__features">
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span><strong>Private 4x4 Land Cruisers:</strong> Pop-up photography roofs, USB charging &amp; cooler box.</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span><strong>Guaranteed Official Permits:</strong> Seamless UWA &amp; RDB gorilla &amp; chimp trekking permits.</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span><strong>Handpicked Eco-Lodges:</strong> Scenic wilderness tented camps &amp; boutique retreats.</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span><strong>Expert Native Trackers:</strong> Passionate local guides with deep wildlife knowledge.</span>
+                                        </li>
+                                    </ul>
+                                    <div class="safari-sidebar-card__cta">
+                                        <a href="contact.html" class="btn btn-primary safari-sidebar-btn">
+                                            <i class="fas fa-paper-plane"></i> Plan Your Custom Safari
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="safari-sidebar-card safari-sidebar-card--support">
+                                <div class="safari-sidebar-support__inner">
+                                    <div class="safari-sidebar-support__icon">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <div class="safari-sidebar-support__text">
+                                        <h4>Need Itinerary Advice?</h4>
+                                        <p>Have questions about gorilla permits, seasonal wildlife viewing, or cross-border travel?</p>
+                                        <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" class="safari-sidebar-support__link">
+                                            <i class="fab fa-whatsapp"></i> Chat with a Specialist
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Bora East Africa Safaris<span class="logo-dot">.</span></h3>
+                <p>Your trusted partner for authentic African safaris and adventures.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61596210129835" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="safaris.html">Safari Packages</a></li>
+                    <li><a href="destinations.html">Destination Guides</a></li>
+                    <li><a href="nkonya-homestay.html">Nkonya Homestay</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 702 413 933</p>
+                <p><i class="fas fa-envelope"></i> info@borasafaris.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bora East Africa Safaris. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/packages.js"></script>
+</body>
+
+</html>

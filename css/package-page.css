@@ -1,0 +1,834 @@
+﻿/* ============================================================
+   PACKAGE DETAIL PAGE STYLES — Bora East Africa Safaris
+   Clean, Elegant Modern Safari Itinerary Layout
+   Subtle African animal-pattern background with solid white
+   content layer matching homepage visual treatment
+   ============================================================ */
+
+/* 1. Page Background — Animal-pattern background visible in outer margins */
+body.package-detail-page {
+    position: relative;
+    background-color: #F7F4EF;
+    background-image: url('../assets/images/safari-pattern-bg.png');
+    background-repeat: repeat;
+    background-size: 800px;
+    background-position: top center;
+    color: #2D3748;
+    font-family: var(--font-body);
+    line-height: 1.68;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Subtle translucent overlay — lets the animal pattern show as decorative texture */
+body.package-detail-page::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(247, 244, 239, 0.42);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body.package-detail-page header,
+body.package-detail-page main,
+body.package-detail-page footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================================
+   2. HEADER & NAVIGATION
+   Solid background, sticky, does NOT overlap content
+   ============================================================ */
+.package-detail-page .header {
+    position: sticky !important;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid rgba(220, 215, 204, 0.8);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+    padding: 0.75rem 0 !important;
+    transition: all 0.3s ease;
+}
+
+.package-detail-page .header .logo {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.package-detail-page .header .nav-links a {
+    color: #2D3748 !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.package-detail-page .header .nav-links a:hover,
+.package-detail-page .header .nav-links a.active {
+    color: var(--color-primary) !important;
+    font-weight: 600;
+}
+
+.package-detail-page .header .mobile-menu-btn {
+    color: var(--color-primary) !important;
+}
+
+/* ============================================================
+   3. BREADCRUMBS
+   ============================================================ */
+.pkg-breadcrumb-nav {
+    padding: 1.25rem 0 0.5rem;
+}
+
+.pkg-breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    color: #555e58;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pkg-breadcrumb-list a {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pkg-breadcrumb-list a:hover {
+    text-decoration: underline;
+    color: #1a4a2e;
+}
+
+.pkg-breadcrumb-list li + li::before {
+    content: '/';
+    margin-right: 0.5rem;
+    color: #A0AEC0;
+}
+
+.pkg-breadcrumb-list li[aria-current="page"] {
+    color: #2D3748;
+    font-weight: 600;
+}
+
+/* ============================================================
+   4. SOLID WHITE CONTENT LAYER (CANVAS)
+   Over animal-pattern background, matching homepage editorial surface
+   All itinerary text, package info, and summaries sit cleanly on white
+   ============================================================ */
+.pkg-page-wrapper {
+    padding: 0 1.25rem 3.5rem;
+}
+
+.pkg-editorial-canvas {
+    max-width: 1200px;
+    margin: 1.25rem auto 3.5rem auto;
+    background-color: #ffffff !important;
+    border-radius: 14px;
+    border: 1px solid rgba(220, 215, 204, 0.75);
+    box-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.03),
+        0 16px 40px rgba(0, 0, 0, 0.05);
+    padding: 3.5rem 3.5rem;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* ============================================================
+   5. COMPACT PACKAGE INTRODUCTION SECTION
+   Sitting cleanly on the solid white content layer
+   ============================================================ */
+.pkg-intro-block {
+    margin-bottom: 2.5rem;
+}
+
+.pkg-intro-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.pkg-meta-category {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #245A36;
+    text-transform: uppercase;
+    background: rgba(36, 90, 54, 0.08);
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+}
+
+.pkg-meta-dot {
+    color: #CBD5E0;
+    font-weight: bold;
+}
+
+.pkg-meta-duration {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #9C6C04;
+    text-transform: uppercase;
+    background: rgba(217, 119, 6, 0.08);
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+}
+
+.pkg-meta-style {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #64748B;
+    text-transform: uppercase;
+}
+
+.pkg-page-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+    color: #143321;
+    line-height: 1.22;
+    margin: 0.5rem 0 0.85rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.pkg-route-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.98rem;
+    color: #4B5563;
+    line-height: 1.55;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #F0ECE4;
+}
+
+.pkg-route-line i {
+    color: var(--color-secondary);
+    font-size: 1.05rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* Intro Grid: Highlights & benefits on left, photo on right */
+.pkg-intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 2.75rem;
+    align-items: center;
+}
+
+.pkg-intro-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pkg-overview-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: #143321;
+    margin: 0 0 0.85rem;
+    font-weight: 700;
+}
+
+.pkg-highlights-list {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.pkg-highlights-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.96rem;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.pkg-highlights-list i {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.pkg-key-benefits {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #4A5568;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #E5E0D6;
+}
+
+.pkg-key-benefits span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.pkg-key-benefits i {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+}
+
+.pkg-intro-media {
+    position: relative;
+}
+
+.pkg-intro-media img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.pkg-media-caption {
+    font-size: 0.82rem;
+    color: #64748B;
+    font-style: italic;
+    margin: 0.5rem 0 0;
+    text-align: center;
+}
+
+/* ============================================================
+   6. TWO-COLUMN LAYOUT: ITINERARY & SAFARI SUMMARY
+   Directly on white layer, spacious editorial layout
+   ============================================================ */
+.pkg-divider {
+    border: none;
+    border-top: 1px solid #ECE7DF;
+    margin: 3rem 0;
+}
+
+.pkg-itinerary-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(310px, 350px);
+    gap: 3.5rem;
+    align-items: start;
+}
+
+.itinerary-content-col {
+    min-width: 0;
+}
+
+.pkg-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.65rem;
+    color: #143321;
+    margin: 0 0 0.35rem;
+    font-weight: 700;
+}
+
+.pkg-section-desc {
+    font-size: 0.95rem;
+    color: #64748B;
+    margin: 0 0 2rem;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   7. NEW DAILY ITINERARY LAYOUT (BULLET-POINT ITINERARY)
+   Clean editorial layout — NO cards, subtle dividers
+   ============================================================ */
+.itinerary-schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+.itinerary-day-item {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid #ECE7DF;
+    transition: background-color 0.2s ease;
+}
+
+.itinerary-day-item:first-child {
+    padding-top: 0;
+}
+
+.itinerary-day-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.itinerary-day-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.itinerary-day-badge {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #245A36;
+    background: rgba(36, 90, 54, 0.08);
+    padding: 0.22rem 0.65rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.itinerary-day-title {
+    font-family: var(--font-heading);
+    font-size: 1.22rem;
+    font-weight: 700;
+    color: #143321;
+    margin: 0;
+    line-height: 1.35;
+}
+
+.itinerary-day-bullets {
+    list-style-type: disc;
+    margin: 0.6rem 0 0 1.35rem;
+    padding: 0;
+}
+
+.itinerary-day-bullets li {
+    font-size: 0.97rem;
+    line-height: 1.68;
+    color: #374151;
+    margin-bottom: 0.45rem;
+}
+
+.itinerary-day-bullets li:last-child {
+    margin-bottom: 0;
+}
+
+.itinerary-day-bullets li::marker {
+    color: #245A36;
+}
+
+/* ============================================================
+   8. SAFARI SUMMARY COLUMN (STICKY ASIDE)
+   Warm restrained container on white canvas
+   ============================================================ */
+.safari-summary-col {
+    position: relative;
+}
+
+.safari-summary-wrapper {
+    position: sticky;
+    top: 90px;
+    background: #FAF8F5;
+    border: 1px solid #EAE4DA;
+    border-radius: 12px;
+    padding: 1.85rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.safari-summary-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: #143321;
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-secondary);
+    display: inline-block;
+}
+
+.safari-summary-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 0;
+    border-bottom: 1px dashed #E2DCD0;
+    font-size: 0.92rem;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row dt {
+    color: #64748B;
+    font-weight: 500;
+    margin: 0;
+}
+
+.summary-row dd {
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0;
+    text-align: right;
+}
+
+.safari-summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.35rem;
+}
+
+.btn-summary-inquire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    background: var(--color-primary);
+    color: #ffffff !important;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 10px rgba(58, 142, 88, 0.2);
+    box-sizing: border-box;
+}
+
+.btn-summary-inquire:hover {
+    background: #2D7344;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(58, 142, 88, 0.3);
+    color: #ffffff !important;
+}
+
+.btn-summary-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    width: 100%;
+    padding: 0.82rem 1.25rem;
+    background: #25D366;
+    color: #ffffff !important;
+    border-radius: 50px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 10px rgba(37, 211, 102, 0.2);
+    box-sizing: border-box;
+}
+
+.btn-summary-whatsapp:hover {
+    background: #1EBE5D;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(37, 211, 102, 0.3);
+    color: #ffffff !important;
+}
+
+.safari-summary-guarantees {
+    border-top: 1px solid #E2DCD0;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.84rem;
+    color: #64748B;
+}
+
+.safari-summary-guarantees div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.safari-summary-guarantees i {
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.safari-summary-back {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.safari-summary-back a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.safari-summary-back a:hover {
+    text-decoration: underline;
+    color: #1A4A2E;
+}
+
+/* ============================================================
+   9. INCLUSIONS & EXCLUSIONS SECTION
+   ============================================================ */
+.pkg-inclusions-section {
+    padding: 0.5rem 0 1rem;
+}
+
+.inclusions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
+.inclusions-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+}
+
+.inclusions-title--inc {
+    color: #1E663B;
+    border-bottom-color: rgba(58, 142, 88, 0.35);
+}
+
+.inclusions-title--exc {
+    color: #8C3018;
+    border-bottom-color: rgba(140, 48, 24, 0.25);
+}
+
+.inclusions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inclusions-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #F0ECE4;
+    font-size: 0.94rem;
+    color: #374151;
+    line-height: 1.55;
+}
+
+.inclusions-list li:last-child {
+    border-bottom: none;
+}
+
+.inclusions-list--inc i {
+    color: var(--color-primary);
+    font-size: 0.92rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.inclusions-list--exc i {
+    color: #C53030;
+    font-size: 0.92rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   10. RELATED PACKAGES SECTION
+   ============================================================ */
+.pkg-related-section {
+    padding: 0.5rem 0 0;
+}
+
+.related-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-top: 1.75rem;
+}
+
+.related-pkg-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    background: #FAF8F5;
+    border: 1px solid #ECE7DF;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.related-pkg-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.related-pkg-img-wrap {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #ECE7DF;
+}
+
+.related-pkg-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.related-pkg-card:hover .related-pkg-img-wrap img {
+    transform: scale(1.04);
+}
+
+.related-pkg-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.related-pkg-dur {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+}
+
+.related-pkg-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #143321;
+    margin: 0 0 0.85rem;
+    line-height: 1.35;
+    transition: color 0.2s ease;
+}
+
+.related-pkg-card:hover .related-pkg-title {
+    color: var(--color-primary);
+}
+
+.related-pkg-link {
+    margin-top: auto;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* ============================================================
+   11. RESPONSIVE DESIGN (Desktop, Tablet, Mobile)
+   ============================================================ */
+@media (max-width: 991px) {
+    .pkg-editorial-canvas {
+        padding: 2.75rem 2.25rem;
+    }
+
+    .pkg-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .pkg-intro-media img {
+        height: 280px;
+    }
+
+    .pkg-itinerary-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .safari-summary-col {
+        position: static;
+        width: 100%;
+    }
+
+    .safari-summary-wrapper {
+        position: static;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .inclusions-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .related-packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pkg-page-wrapper {
+        padding: 0 0.75rem 2.5rem;
+    }
+
+    .pkg-editorial-canvas {
+        padding: 2rem 1.25rem;
+        border-radius: 12px;
+        margin-top: 0.75rem;
+    }
+
+    .pkg-page-title {
+        font-size: 1.7rem;
+    }
+
+    .pkg-route-line {
+        font-size: 0.92rem;
+    }
+
+    .pkg-key-benefits {
+        gap: 0.65rem 1.25rem;
+    }
+
+    .related-packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .itinerary-day-title {
+        font-size: 1.15rem;
+    }
+
+    .itinerary-day-bullets li {
+        font-size: 0.94rem;
+    }
+
+    .safari-summary-wrapper {
+        padding: 1.35rem;
+    }
+}

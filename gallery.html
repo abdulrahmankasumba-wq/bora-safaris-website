@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Bora East Africa Safaris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            height: 250px;
+        }
+
+        .gallery-item .img-placeholder {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .img-placeholder {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: #fff;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="tour image/logo/Bora Safaris Gorilla Adventure Logo.png" alt="Bora East Africa Safaris" class="logo-img"></a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="safaris.html">Safaris</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="nkonya-homestay.html">Homestay</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner"
+            style="background-image: url('assets/images/gallery-bg.png'); background-color: #5d4037;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h1>Our Moments</h1>
+                <p>Capturing the magic of the wild</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Gallery Items -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/Sempaya-Hotsprings semulik.jpg"
+                            alt="Sempaya Hot Springs in Semuliki National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/WhatsApp Image 2026-05-19 at 9.18.27 AM (2).jpeg" alt="Scenic Safari Trail"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/Zebras-in-Lake-Mburo-NP.jpg" alt="Zebras in Lake Mburo National Park"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/boat-cruise Murchison Falls National Park.jpg"
+                            alt="Boat Cruise in Murchison Falls National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/bwindi silverback gorilla.png"
+                            alt="Silverback Gorilla in Bwindi Impenetrable Forest" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/chimp.jpeg" alt="Chimpanzee in Kibale Forest National Park"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/chimps.jpeg" alt="Chimpanzees Grooming in the Wild"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/codes.jpeg" alt="Safari Tour Group" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/elephant.jpeg" alt="African Elephant in the Savannah"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/equator.jpeg" alt="Uganda Equator Monument" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/giraffe sunset.jpeg" alt="Giraffe Silhouetted Against Sunset"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/giraffe.jpeg" alt="Majestic Giraffe Feedings" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/golden money mgahinga.png"
+                            alt="Golden Monkey in Mgahinga Gorilla National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/gorilla and baby.jpeg" alt="Mother Gorilla and Baby in Bwindi"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/gorilla eating.jpeg" alt="Mountain Gorilla Foraging"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/kasubi tombs.jpeg" alt="Kasubi Tombs UNESCO World Heritage Site"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/kibale monkey 2.webp" alt="Primate in Kibale Forest"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/kibale monkey.png" alt="Monkey in Forest Canopy" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/kidepo-valley-national giraffe.jpg"
+                            alt="Rothschild's Giraffe in Kidepo Valley" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/lake bunyonyi retreat.jpg" alt="Lake Bunyonyi Scenic Retreat"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/lion on rock.jpeg" alt="Lion resting on Kopje in the Savannah"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/lion.jpeg" alt="African Lion Male" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/mount-elgon-national-park.jpg" alt="Landscape of Mount Elgon National Park"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/mt elgon 2.png" alt="Trekking in Mount Elgon Caves and Peaks"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/mt rwenzori Margherita-Peak-w.png"
+                            alt="Snow-capped Margherita Peak, Rwenzori Mountains" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/muchsion falls.jpeg" alt="Thundering Murchison Falls"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/murchison-falls-tight.jpg" alt="Murchison Falls Narrow Gorge Close-up"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rafting-1 nile.jpg" alt="White Water Rafting on the Nile"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/sipi falls.png" alt="Scenic Sipi Falls" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/sunset.jpeg" alt="Beautiful Savannah Sunset" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/tree climb lion queen elizabeth.jpg"
+                            alt="Tree-Climbing Lion in Ishasha, Queen Elizabeth National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/water fall.jpeg" alt="Scenic Jungle Waterfall" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/water rafting.jpeg" alt="Whitewater Rafting Adventure"
+                            class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                                                        <!-- Safari Adventures & Activities -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/safari_activities_hero.png" alt="East African Safari Expedition & Game Drives" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/safari_activities_adventure.png" alt="Mountain Trekking and Outdoor Adventure" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/safari_activities_water.png" alt="White Water Rafting and Nile Water Sports" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/safari_activities_culture.png" alt="Cultural Tourism and Community Heritage Encounters" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Additional Wildlife & Landscape Images -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/murchison-falls-tight.jpg" alt="Murchison Falls Gorge Close-Up" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/lion.jpeg" alt="African Lion – Male" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+
+                    <!-- Field Photographs -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/antelope.jpeg" alt="Antelope on the Savanna" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/buffalos.jpeg" alt="African Buffalo Herd" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/buffaloz.jpeg" alt="African Buffalo Close-Up" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/bwindi entrance.jpeg" alt="Bwindi Impenetrable National Park Entrance" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/cultural tour of guardian village.jpeg" alt="Cultural Tour of Guardian Village" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/elep in lodge compound.jpeg" alt="Elephant Near Safari Lodge" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/eleph on savanna plains.jpeg" alt="Elephant on the Savanna Plains" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/elephant in mfnp.jpeg" alt="Elephant in Murchison Falls National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/giraffe at eve game drive.jpeg" alt="Giraffe at Evening Game Drive" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/giraffe window.jpeg" alt="Giraffe Close-Up from Safari Vehicle" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/kaki har in mfnp.jpeg" alt="Safari Guide and Guests in Murchison Falls NP" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/kaki haru equator.jpeg" alt="Bora East Africa Safaris Guide at the Uganda Equator" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/kaki haruna on tour.jpeg" alt="Bora East Africa Safaris Guide Leading a Safari" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/lake side .jpeg" alt="Serene Lakeside Scene" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/leopard grass.jpeg" alt="Leopard Resting in Grass" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/leopard in cactus mfnp.jpeg" alt="Leopard Among Cactus in Murchison Falls NP" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/lion in park.jpeg" alt="Lion in the National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/murchsion falls.jpeg" alt="Murchison Falls – Thundering Cascade" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/source of nile 2.jpeg" alt="Source of the Nile, Jinja" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/sunset at lodge.jpeg" alt="Golden Sunset at a Safari Lodge" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/sunset at nkonya.jpeg" alt="Sunset at Nkonya Village" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/sunset in mfnp.jpeg" alt="Breathtaking Sunset in Murchison Falls NP" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/tree cl lion shadow.jpeg" alt="Tree-Climbing Lion Silhouette at Sunset" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/tree climb lion isasha.jpeg" alt="Tree-Climbing Lion in Ishasha Sector" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/tree climbing lion.jpeg" alt="Tree-Climbing Lion, Queen Elizabeth NP" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/ug equatour.jpeg" alt="Uganda Equator Tour Experience" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/WhatsApp Image 2026-10-25 at 2.15.2.jpeg" alt="Bora East Africa Safaris – Field Moments" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/field images/WhatsApp Image 2026-10-25 at 2.15.3vs9 PM.jpeg" alt="Bora East Africa Safaris – Field Moments" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+
+                    <!-- Rwanda – Akagera National Park -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/akagera-1.jpg" alt="Akagera National Park – Rwanda's Big Five Safari" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/akagera-2.jpg" alt="Wildlife in Akagera National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/akagera-3.jpg" alt="Akagera National Park Landscapes" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/akagera-4.jpg" alt="Savannah Safari – Akagera, Rwanda" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/akagera-5.jpg" alt="Lake Ihema – Akagera National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/akagera-6.jpg" alt="Akagera NP – Wildlife and Waterways" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+
+                    <!-- Rwanda – Volcanoes National Park -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/volcanoes-1.jpg" alt="Volcanoes National Park – Gorilla Trekking in Rwanda" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/volcanoes-2.jpg" alt="Virunga Mountains – Volcanoes National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/volcanoes-3.jpg" alt="Mountain Gorillas – Volcanoes National Park, Rwanda" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/volcanoes-4.jpg" alt="Golden Monkeys – Volcanoes National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/volcanoes-5.jpg" alt="Misty Virunga Peaks – Rwanda" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/volcanoes-6.jpg" alt="Gorilla Trekking Experience – Volcanoes NP" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+
+                    <!-- Rwanda – Nyungwe Forest -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/nyungwe-1.jpg" alt="Nyungwe Forest National Park – Ancient Rainforest" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/nyungwe-2.jpg" alt="Nyungwe Forest – Canopy Walkway" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/nyungwe-3.jpg" alt="Chimpanzees in Nyungwe Forest" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/nyungwe-4.jpg" alt="Primates in Nyungwe National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/nyungwe-5.jpg" alt="Nyungwe Forest Landscapes" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/nyungwe-6.jpg" alt="Nyungwe Forest – Rwanda's Ancient Rainforest" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+
+                    <!-- Rwanda – Gishwati-Mukura National Park -->
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-1.jpg" alt="Gishwati-Mukura National Park – Forest Treasure" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-2.jpg" alt="Gishwati Forest – Chimpanzee Trekking" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-3.jpg" alt="Golden Monkeys in Gishwati-Mukura NP" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-4.jpg" alt="Gishwati Forest Landscapes" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-5.jpg" alt="Birdlife in Gishwati-Mukura National Park" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-6.jpg" alt="Gishwati-Mukura NP – Rwanda's Hidden Forest" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="tour image/rwanda/gishwati-7.jpg" alt="Tea Plantations Near Gishwati Forest" class="img-placeholder">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Bora East Africa Safaris<span class="logo-dot">.</span></h3>
+                <p>Your trusted partner for authentic Ugandan safaris and adventures.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61596210129835" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="safaris.html">Safaris</a></li>
+                    <li><a href="destinations.html">Destination Guides</a></li>
+                    <li><a href="nkonya-homestay.html">Nkonya Homestay</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 702 413 933</p>
+                <p><i class="fas fa-envelope"></i> [EMAIL_ADDRESS]</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bora East Africa Safaris. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,725 @@
+/* Nkonya Village Homestay Page Stylesheet */
+
+/* Page Level Settings */
+.nkonya-page {
+  background-color: var(--color-bg);
+  /* Subtle texture background from Nkonya brand */
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233A8E58' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Cinematic and Section Headings */
+.nkonya-page .cinematic-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: var(--color-white);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nkonya-page .section-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+}
+
+/* Custom Scoped Variables for components */
+.nkonya-page {
+  --nkonya-shadow-soft: 0 10px 40px rgba(58, 142, 88, 0.08);
+  --nkonya-shadow-hover: 0 15px 50px rgba(58, 142, 88, 0.15);
+  --nkonya-glass-bg: rgba(255, 255, 255, 0.12);
+  --nkonya-glass-border: rgba(255, 255, 255, 0.25);
+  --nkonya-glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  --nkonya-glass-blur: blur(12px);
+  --nkonya-radius-lg: 20px;
+  --nkonya-radius-md: 12px;
+}
+
+/* Nkonya Custom Hero Section */
+.nkonya-hero {
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+  overflow: hidden;
+  margin-top: -80px; /* Offset the absolute header */
+}
+
+.nkonya-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.nkonya-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(18, 63, 21, 0.5) 0%, rgba(18, 63, 21, 0.8) 100%);
+  z-index: -1;
+}
+
+.nkonya-hero-content {
+  max-width: 900px;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.nkonya-hero-subheading {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  max-width: 750px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nkonya-hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nkonya-hero .btn-outline {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nkonya-hero .btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  z-index: 3;
+}
+
+.scroll-indicator a {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.scroll-indicator a:hover {
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-15px) translateX(-50%); }
+  60% { transform: translateY(-7px) translateX(-50%); }
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: var(--color-bg);
+}
+
+.split-layout {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.split-image {
+  flex: 1;
+  position: relative;
+}
+
+.split-image img {
+  border-radius: var(--nkonya-radius-lg);
+  box-shadow: var(--nkonya-shadow-soft);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.floating-pattern {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--nkonya-radius-lg);
+  z-index: 1;
+  transform: translate(15px, 15px);
+}
+
+.split-text {
+  flex: 1;
+}
+
+.split-text p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Experiences Section */
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.experience-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.experience-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.exp-image {
+  flex: 1;
+  border-radius: var(--nkonya-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--nkonya-shadow-soft);
+}
+
+.exp-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.exp-image:hover img {
+  transform: scale(1.05);
+}
+
+.exp-content {
+  flex: 1;
+}
+
+.exp-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.exp-content p {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.icon-list i {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+}
+
+/* Cultural Exchange Section */
+.cultural-exchange {
+  background-image: url('https://placehold.co/1536x1024/1b4332/ffffff?text=Cultural+Exchange');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+.cultural-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 57, 37, 0.85);
+  z-index: 1;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.cultural-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cultural-content h2 {
+  color: var(--color-white) !important;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.stat-num {
+  font-size: 2.8rem;
+  font-family: var(--font-body);
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: rgba(58, 142, 88, 0.05); /* very light primary green tint */
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: var(--color-white);
+  padding: 2.2rem 1.8rem;
+  border-radius: var(--nkonya-radius-lg);
+  text-align: center;
+  box-shadow: var(--nkonya-shadow-soft);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--nkonya-shadow-hover);
+}
+
+.feature-card i {
+  font-size: 2.2rem;
+  color: var(--color-secondary);
+  margin-bottom: 1.2rem;
+}
+
+.feature-card h4 {
+  font-size: 1.15rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* What's Included Section */
+.whats-included {
+  background-color: var(--color-bg);
+}
+
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+}
+
+.included-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-white);
+  padding: 1rem 1.2rem;
+  border-radius: var(--nkonya-radius-md);
+  font-weight: 500;
+  box-shadow: var(--nkonya-shadow-soft);
+  color: var(--color-text-main);
+  transition: transform 0.3s ease;
+}
+
+.included-item:hover {
+  transform: translateY(-3px);
+}
+
+.included-item i {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+/* Masonry Gallery Section */
+.nkonya-page .masonry-gallery {
+  column-count: 3;
+  column-gap: 1.2rem;
+}
+
+.nkonya-page .gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.2rem;
+  border-radius: var(--nkonya-radius-lg);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: var(--nkonya-shadow-soft);
+}
+
+.nkonya-page .gallery-item img {
+  width: 100%;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  border-radius: var(--nkonya-radius-lg);
+}
+
+.nkonya-page .gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+/* Testimonials Section */
+.nkonya-testimonials {
+  background-color: rgba(58, 142, 88, 0.05);
+}
+
+.testimonial-slider {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-white);
+  padding: 3rem 2rem;
+  border-radius: var(--nkonya-radius-lg);
+  box-shadow: var(--nkonya-shadow-soft);
+}
+
+.testimonial-slide .stars {
+  color: var(--color-secondary);
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.testimonial-slide p {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-text-main);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-slide h4 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Contact & Booking Section */
+.nkonya-contact {
+  background-image: url('../nkonya-homestay/nkoya images/IMG_0818-1536x1024.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: var(--spacing-xl) 0;
+}
+
+.nkonya-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 63, 21, 0.82);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem var(--spacing-md);
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
+}
+
+.glassmorphism {
+  background: var(--nkonya-glass-bg);
+  backdrop-filter: var(--nkonya-glass-blur);
+  -webkit-backdrop-filter: var(--nkonya-glass-blur);
+  border: 1px solid var(--nkonya-glass-border);
+  box-shadow: var(--nkonya-glass-shadow);
+  border-radius: var(--nkonya-radius-lg);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info .cinematic-heading {
+  font-size: 2.2rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.contact-details i {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--color-secondary);
+  color: var(--color-text-main);
+  transform: translateY(-3px);
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid transparent;
+  border-radius: var(--nkonya-radius-md);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(58, 142, 88, 0.25);
+}
+
+.nkonya-contact .btn-secondary {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-main);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nkonya-contact .btn-secondary:hover {
+  background-color: #c09015;
+  transform: translateY(-2px);
+}
+
+/* Floating Elements */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.nkonya-mobile-sticky-book {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-white);
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Animations (Mapped to global JS observer class 'visible') */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.animate-on-scroll.reveal-up {
+  transform: translateY(40px);
+}
+
+.animate-on-scroll.reveal-left {
+  transform: translateX(-50px);
+}
+
+.animate-on-scroll.reveal-right {
+  transform: translateX(50px);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translate(0) !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .split-layout,
+  .experience-row,
+  .experience-row.reverse {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .exp-image img {
+    height: 300px;
+  }
+  
+  .contact-wrapper {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nkonya-page .masonry-gallery {
+    column-count: 2;
+  }
+  
+  .nkonya-mobile-sticky-book {
+    display: block;
+  }
+  
+  .floating-whatsapp {
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nkonya-page .masonry-gallery {
+    column-count: 1;
+  }
+  
+  .nkonya-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nkonya-hero-buttons a,
+  .nkonya-hero-buttons button {
+    width: 100%;
+  }
+}

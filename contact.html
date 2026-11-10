@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bora East Africa Safaris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-form {
+            background-color: var(--color-white);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: 2px solid var(--color-secondary);
+            border-color: transparent;
+        }
+
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            min-height: 400px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+        }
+
+        @media(max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="tour image/logo/Bora Safaris Gorilla Adventure Logo.png" alt="Bora East Africa Safaris" class="logo-img"></a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="safaris.html">Safaris</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="nkonya-homestay.html">Homestay</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active btn btn-primary nav-btn">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner"
+            style="background-image: url('assets/images/contact-bg.png'); background-color: #3b3b3b;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h1>Contact Us</h1>
+                <p>Your gateway to the ultimate African adventure</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="content-paper">
+                    <div class="contact-grid">
+                        <div class="contact-form animate-on-scroll">
+                            <h2>Send us a Message</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="email@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="interest">Interested In</label>
+                                    <select id="interest">
+                                        <option>General Inquiry</option>
+                                        <option>Gorilla Trekking</option>
+                                        <option>Wildlife Safari</option>
+                                        <option>Cultural Tour</option>
+                                        <option>Custom Itinerary</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="5" placeholder="Tell us about your travel plans..."
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="contact-info animate-on-scroll">
+                            <div class="info-block" style="margin-bottom: 2rem;">
+                                <h3>Visit Us</h3>
+                                <p>Plot 12, Kampala Road</p>
+                                <p>Kampala, Uganda</p>
+                                <br>
+                                <h3>Contact Info</h3>
+                                <p>Phone: +256 702 413 933</p>
+                                <p>WhatsApp: <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer">+256 755 899 925</a></p>
+                                <p>Email: info@borasafaris.com</p>
+                            </div>
+                            <div class="map-container">
+                                <!-- Google Map Placeholder -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127670.66986644208!2d32.50294711929388!3d0.3130283020614838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d74b39b%3A0x4538903dd96b6fec!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1706044455845!5m2!1sen!2sus"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Bora East Africa Safaris<span class="logo-dot">.</span></h3>
+                <p>Your trusted partner for authentic African safaris and adventures.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61596210129835" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="safaris.html">Safaris</a></li>
+                    <li><a href="destinations.html">Destination Guides</a></li>
+                    <li><a href="nkonya-homestay.html">Nkonya Homestay</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 702 413 933</p>
+                <p><i class="fas fa-envelope"></i> info@borasafaris.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bora East Africa Safaris. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

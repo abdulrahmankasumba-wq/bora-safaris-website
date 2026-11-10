@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Activities in Uganda – Adventures Beyond the Wildlife | Bora East Africa Safaris</title>
+    <meta name="description" content="Discover exciting safari activities in Uganda with Bora East Africa Safaris. From Nile white-water rafting and mountaineering to boat cruises and cultural visits.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/articles.css">
+    <link rel="stylesheet" href="../css/article-page.css">
+    <style>
+        .article-inline-image {
+            margin: 2.5rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .article-inline-image.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .article-inline-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(58, 142, 88, 0.15);
+        }
+        .article-inline-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        .article-inline-image__caption {
+            font-size: 0.85rem;
+            color: #6B7280;
+            text-align: center;
+            margin-top: 0.75rem;
+            font-style: italic;
+            font-family: var(--font-body);
+        }
+        .cta-box {
+            margin: 3.5rem 0;
+            padding: 3rem 2.5rem;
+            background: linear-gradient(135deg, #3A8E58 0%, #2c6e40 100%);
+            border-radius: 16px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(58, 142, 88, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .cta-box h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .cta-box p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-box .btn-cta {
+            display: inline-block;
+            background-color: #D4A017;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+            box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3);
+        }
+        .cta-box .btn-cta:hover {
+            background-color: #c09015;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 160, 23, 0.4);
+        }
+        .cta-box.animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .cta-box.animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo"><img src="../tour image/logo/Bora Safaris Gorilla Adventure Logo.png" alt="Bora East Africa Safaris" class="logo-img"></a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../safaris.html">Safaris</a>
+                <a href="../destinations.html" class="active">Destinations</a>
+                <a href="../nkonya-homestay.html">Homestay</a>
+                <a href="../gallery.html">Gallery</a>
+                <a href="../contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="article-breadcrumb__list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li>Safari Activities in Uganda</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="article-hero">
+        <div class="article-hero__bg" style="background-image: url('../tour image/safari_activities_hero.png');"></div>
+        <div class="article-hero__overlay"></div>
+        <div class="article-hero__content">
+            <div class="container">
+                <span class="article-hero__tag">Activities</span>
+                <h1 class="article-hero__title">Safari Activities in Uganda<br>Adventures Beyond the Wildlife</h1>
+                <div class="article-hero__meta">
+                    <span><i class="far fa-calendar"></i> July 2026</span>
+                    <span><i class="far fa-clock"></i> 7 min read</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Uganda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body -->
+    <section class="article-body">
+        <div class="container">
+            <div class="article-layout">
+
+                <!-- Content -->
+                <article class="article-content">
+                    <p>A safari is much more than simply spotting wildlife. At <strong>Bora East Africa Safaris</strong>, we believe that every journey should be filled with unforgettable moments, breathtaking scenery, meaningful cultural encounters, and thrilling adventures. Whether you are exploring Uganda's lush forests, climbing majestic mountains, cruising along tranquil rivers, or meeting local communities, our carefully crafted itineraries offer experiences that leave lasting memories.</p>
+
+                    <p>From first-time visitors to seasoned adventurers, our safari activities are designed to suit every type of traveler. Here are some of the incredible experiences you can enjoy on a <strong>Bora East Africa Safaris</strong> safari.</p>
+
+                    <h2>Hiking and Nature Walks</h2>
+                    <p>Step away from the vehicle and experience Uganda on foot. Guided hikes and nature walks take you through tropical forests, rolling hills, waterfalls, and scenic landscapes where every trail reveals something new.</p>
+                    <p>As you walk, you'll discover indigenous plants, colorful butterflies, unique insects, and smaller wildlife often missed during game drives. Our knowledgeable guides share fascinating insights about the local ecosystem, making every walk both educational and enjoyable.</p>
+
+                    <div class="article-facts">
+                        <h4><i class="fas fa-hiking"></i> Hiking Highlights</h4>
+                        <ul style="grid-template-columns: 1fr;">
+                            <li>Beautiful landscapes and panoramic viewpoints</li>
+                            <li>Indigenous flora and medicinal plants</li>
+                            <li>Butterflies and smaller wildlife</li>
+                            <li>Peaceful forest environments</li>
+                            <li>Photography opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-inline-image animate-on-scroll">
+                        <img src="../tour image/safari_activities_adventure.png" alt="Tourists hiking on a scenic mountain trail in Uganda" loading="lazy">
+                        <div class="article-inline-image__caption">Experiencing the mountains and hiking trails of Uganda up close.</div>
+                    </div>
+
+                    <h2>Mountaineering Adventures</h2>
+                    <p>For travelers seeking a greater challenge, Uganda's mountains offer unforgettable adventures. Whether climbing the legendary <strong>Rwenzori Mountains</strong>, hiking <strong>Mount Elgon</strong>, or exploring volcanic peaks, every ascent rewards you with spectacular views and a true sense of achievement.</p>
+                    <p>Mountaineering allows you to experience changing ecosystems, alpine vegetation, crystal-clear streams, and breathtaking mountain scenery unlike anywhere else in Africa.</p>
+
+                    <div class="article-why" style="background: #3A8E58; margin-bottom: 2rem;">
+                        <h4 style="color: #fff; margin-bottom: 1rem;"><i class="fas fa-mountain"></i> What to expect:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Stunning mountain landscapes</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Unique alpine vegetation</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Glacier views (season permitting)</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Physical adventure and personal achievement</li>
+                            <li style="color: rgba(255,255,255,0.92); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Incredible sunrise and sunset views</li>
+                        </ul>
+                    </div>
+
+                    <h2>Boat Cruises</h2>
+                    <p>Some of Uganda's most remarkable wildlife experiences happen on the water. Boat cruises along rivers and lakes offer a peaceful way to observe animals as they gather along the shoreline.</p>
+                    <p>Depending on your destination, you may encounter hippos, crocodiles, elephants, buffaloes, antelopes, and numerous bird species while enjoying spectacular sunsets and refreshing breezes.</p>
+
+                    <div class="article-facts">
+                        <h4><i class="fas fa-ship"></i> Boat Cruises Offer:</h4>
+                        <ul style="grid-template-columns: 1fr;">
+                            <li>Relaxing wildlife viewing</li>
+                            <li>Beautiful sunsets</li>
+                            <li>Excellent photography opportunities</li>
+                            <li>River and lakeside scenery</li>
+                            <li>Close encounters with aquatic wildlife</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-inline-image animate-on-scroll">
+                        <img src="../tour image/safari_activities_water.png" alt="A boat cruise at sunset on the Nile River in Uganda" loading="lazy">
+                        <div class="article-inline-image__caption">Cruising along the historic River Nile, observing wildlife at sunset.</div>
+                    </div>
+
+                    <h2>White Water Rafting</h2>
+                    <p>Adventure enthusiasts can experience the excitement of white-water rafting on the <strong>River Nile</strong>. Navigate exhilarating rapids under the guidance of experienced professionals while taking in the surrounding natural beauty.</p>
+                    <p>Whether you're a beginner or an experienced rafter, this activity promises excitement, teamwork, and unforgettable memories.</p>
+
+                    <div class="article-why" style="background: #3A8E58; margin-bottom: 2rem;">
+                        <h4 style="color: #fff; margin-bottom: 1rem;"><i class="fas fa-water"></i> Perfect for travelers seeking:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Adrenaline-filled adventure</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Team experiences</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Scenic river landscapes</li>
+                            <li style="color: rgba(255,255,255,0.92); padding: 0.4rem 0; display: flex; gap: 0.65rem;">A unique Nile experience</li>
+                        </ul>
+                    </div>
+
+                    <h2>Zip Lining</h2>
+                    <p>Soar above forest canopies and enjoy a bird's-eye view of Uganda's lush landscapes. Zip lining combines adventure with breathtaking scenery, allowing you to glide through the treetops while appreciating the beauty of nature from above.</p>
+                    <p>This activity is suitable for families, couples, and thrill-seekers alike.</p>
+
+                    <h2>River Tubing</h2>
+                    <p>For a more relaxed water adventure, tubing allows you to float along gentle sections of the river while surrounded by beautiful scenery. It's an enjoyable way to cool off, unwind, and appreciate Uganda's natural beauty from a different perspective.</p>
+
+                    <h2>Bird Watching</h2>
+                    <p>Uganda is one of Africa's premier birding destinations, home to over <strong>1,000 recorded bird species</strong>. From wetlands and forests to savannahs and mountain ranges, bird enthusiasts can discover an incredible diversity of colorful and rare birds.</p>
+                    <p>Whether you're an experienced birder or simply enjoy nature, every outing offers exciting discoveries.</p>
+
+                    <div class="article-facts">
+                        <h4><i class="fas fa-binoculars"></i> Birds You May Observe:</h4>
+                        <ul>
+                            <li>Colorful kingfishers</li>
+                            <li>African fish eagles</li>
+                            <li>Great blue turacos</li>
+                            <li>Shoebills</li>
+                            <li>Sunbirds</li>
+                            <li>Hornbills</li>
+                            <li>Weaver birds</li>
+                            <li>Many endemic Albertine Rift species</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-inline-image animate-on-scroll">
+                        <img src="../tour image/safari_activities_culture.png" alt="A vibrant cultural performance and wildlife experience in Uganda" loading="lazy">
+                        <div class="article-inline-image__caption">Immersing in traditional community experiences and local heritage.</div>
+                    </div>
+
+                    <h2>Cultural Visits</h2>
+                    <p>Travel is about more than places—it's about people. Our cultural visits provide authentic opportunities to connect with local communities, learn about traditional customs, taste local cuisine, enjoy traditional music and dance, and experience Uganda's rich cultural heritage.</p>
+                    <p>These interactions create meaningful memories while supporting local communities and preserving cultural traditions.</p>
+
+                    <div class="article-why" style="background: #3A8E58; margin-bottom: 2rem;">
+                        <h4 style="color: #fff; margin-bottom: 1rem;"><i class="fas fa-users"></i> Experiences may include:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Traditional dance performances</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Local storytelling</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Village walks</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Craft demonstrations</li>
+                            <li style="color: rgba(255,255,255,0.92); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Traditional food tasting</li>
+                            <li style="color: rgba(255,255,255,0.92); padding: 0.4rem 0; display: flex; gap: 0.65rem;">Community interactions</li>
+                        </ul>
+                    </div>
+
+                    <h2>Volunteering Experiences</h2>
+                    <p>Travelers looking to make a positive impact can participate in meaningful volunteering experiences. Depending on the itinerary, opportunities may include community development projects, school visits, environmental conservation, tree planting, and other initiatives that support local communities.</p>
+                    <p>Volunteering allows visitors to give back while gaining a deeper understanding of Uganda's people and culture.</p>
+
+                    <h2>Discover the Beauty of Uganda</h2>
+                    <p>Every <strong>Bora East Africa Safaris</strong> itinerary is carefully designed to combine adventure, relaxation, wildlife, culture, and breathtaking scenery. Along the way, you may witness stunning landscapes, encounter diverse wildlife, discover hundreds of bird species, experience vibrant local cultures, and create memories that last a lifetime.</p>
+                    <p>Whether you're hiking through ancient forests, cruising along the Nile, climbing majestic mountains, or sharing stories with local communities, every experience brings you closer to the heart of Africa.</p>
+                    <p>Let <strong>Bora East Africa Safaris</strong> guide you on an unforgettable journey filled with adventure, discovery, and authentic experiences.</p>
+
+                    <!-- Book This Experience CTA -->
+                    <div class="cta-box animate-on-scroll">
+                        <h3>Book This Experience</h3>
+                        <p>Ready to experience the thrill and beauty of Uganda beyond the wildlife? Let Bora East Africa Safaris design your perfect custom adventure itinerary today.</p>
+                        <a href="../contact.html" class="btn-cta"><i class="fas fa-calendar-check"></i> Plan My Adventure</a>
+                    </div>
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-card sidebar-book">
+                        <h4>Book This Safari</h4>
+                        <p>Ready to experience Uganda's incredible activities? Our expert guides will make your adventure unforgettable.</p>
+                        <a href="../contact.html" class="btn-book">Plan My Safari <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="sidebar-card sidebar-facts">
+                        <h4>Quick Facts</h4>
+                        <dl>
+                            <dt>Location</dt><dd>Uganda (All Regions)</dd>
+                            <dt>Activities</dt><dd>Rafting, Hiking, Culture</dd>
+                            <dt>Difficulty</dt><dd>Easy to Challenging</dd>
+                            <dt>Best Time</dt><dd>Year-round</dd>
+                            <dt>Duration</dt><dd>Customizable</dd>
+                            <dt>Group Size</dt><dd>1 to 20+ People</dd>
+                        </dl>
+                    </div>
+
+                    <div class="sidebar-card sidebar-related">
+                        <h4>Related Articles</h4>
+                        <a href="bwindi.html"><span class="sidebar-related__dot"></span><span class="sidebar-related__title">Bwindi Impenetrable NP – Home of the Mountain Gorilla</span></a>
+                        <a href="murchison.html"><span class="sidebar-related__dot"></span><span class="sidebar-related__title">Murchison Falls – Uganda's Greatest Safari Adventure</span></a>
+                        <a href="rwenzori.html"><span class="sidebar-related__dot"></span><span class="sidebar-related__title">Rwenzori Mountains – Legendary Mountains of the Moon</span></a>
+                        <a href="mt-elgon.html"><span class="sidebar-related__dot"></span><span class="sidebar-related__title">Mount Elgon – The Ancient Giant of East Africa</span></a>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="article-related">
+        <div class="container">
+            <div class="section-header center-text">
+                <h2>Explore More Experiences</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="articles-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <article class="article-card">
+                    <div class="article-card__image-wrap">
+                        <img src="../tour image/gorilla and baby.jpeg" alt="Mountain gorilla in Bwindi" loading="lazy">
+                        <span class="article-tag">Gorilla Trekking</span>
+                    </div>
+                    <div class="article-card__body">
+                        <h3 class="article-card__title">Bwindi Impenetrable NP – Home of the Gorilla</h3>
+                        <a href="bwindi.html" class="article-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-wrap">
+                        <img src="../tour image/muchsion falls.jpeg" alt="Murchison Falls" loading="lazy">
+                        <span class="article-tag">National Park</span>
+                    </div>
+                    <div class="article-card__body">
+                        <h3 class="article-card__title">Murchison Falls – Uganda's Greatest Safari</h3>
+                        <a href="murchison.html" class="article-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-wrap">
+                        <img src="../tour image/mt rwenzori Margherita-Peak-w.png" alt="Rwenzori mountains snow peak" loading="lazy">
+                        <span class="article-tag">Mountaineering</span>
+                    </div>
+                    <div class="article-card__body">
+                        <h3 class="article-card__title">Rwenzori Mountains – Legendary Mountains</h3>
+                        <a href="rwenzori.html" class="article-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Bora East Africa Safaris<span class="logo-dot">.</span></h3>
+                <p>Your trusted partner for authentic African safaris and adventures.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61596210129835" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../safaris.html">Safaris</a></li>
+                    <li><a href="../nkonya-homestay.html">Nkonya Homestay</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 702 413 933</p>
+                <p><i class="fas fa-envelope"></i> info@borasafaris.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bora East Africa Safaris. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

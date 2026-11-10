@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora East Africa Safaris | Your Gateway to African Safaris</title>
+    <meta name="description"
+        content="Discover breathtaking wildlife and authentic safari experiences across Uganda and Rwanda with Bora East Africa Safaris. Premium private safaris, gorilla trekking, and tailor-made expeditions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/homepage-editorial.css">
+</head>
+
+<body class="home-page">
+
+    <!-- Header -->
+    <header class="header home-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="tour image/logo/Bora Safaris Gorilla Adventure Logo.png" alt="Bora East Africa Safaris" class="logo-img"></a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="safaris.html">Safaris</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="nkonya-homestay.html">Homestay</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cinematic Hero Section -->
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('tour image/hero/giraffe sunset.jpeg');"></div>
+            <div class="slide"
+                style="background-image: url('tour image/hero/boat-cruise Murchison Falls National Park.jpg');"></div>
+            <div class="slide" style="background-image: url('tour image/hero/bwindi silverback gorilla.png');"></div>
+            <div class="slide" style="background-image: url('tour image/hero/Zebras-in-Lake-Mburo-NP.jpg');"></div>
+            <div class="slide" style="background-image: url('tour image/hero/kidepo-valley-national giraffe.jpg');"></div>
+            <div class="slide" style="background-image: url('tour image/hero/mount-elgon-national-park.jpg');"></div>
+            <div class="slide" style="background-image: url('tour image/hero/chimps.jpeg');"></div>
+            <div class="slide" style="background-image: url('tour image/hero/golden money mgahinga.png');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container animate-on-scroll">
+            <h1 class="hero-title" style="color: #ffffff;">Your Gateway to <br> East African Safaris</h1>
+            <p class="hero-subtitle" style="max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                Welcome to Bora East Africa Safaris, the home of authentic East African adventures. Experience breathtaking
+                wildlife encounters, vibrant local cultures, and world-class guidance across Uganda and Rwanda.
+                From misty mountain gorilla sanctuaries to golden savannah sunsets, your extraordinary journey begins here.
+            </p>
+            <div class="hero-buttons">
+                <a href="#safaris" class="btn btn-primary">Explore Safaris</a>
+                <a href="contact.html" class="btn btn-secondary">Plan Your Adventure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Background Wrapper (African animal-pattern visible in margins) -->
+    <div class="main-content-bg">
+
+        <!-- 1. Top Packages Section (Horizontal Safari Showcase) -->
+        <section class="top-packages-section animate-on-scroll" id="safaris">
+            <div class="top-packages-container">
+                <div class="top-packages-surface">
+                    
+                    <!-- Left Column: Introductory Content (Exact 25% Width) -->
+                    <div class="top-packages-intro-col">
+                        <span class="top-packages-eyebrow">EXPLORE OUR SAFARIS</span>
+                        <h2 class="top-packages-heading">Top Packages</h2>
+                        <div class="top-packages-divider"></div>
+                        <p class="top-packages-intro-text">
+                            Every safari we offer is thoughtfully curated to bring you closer to Africa’s extraordinary wildlife, landscapes, and cultures. Explore our handpicked journeys or let us create a personalised itinerary tailored to your interests, pace, and budget.
+                        </p>
+                        
+                        <div class="top-packages-action-wrap">
+                            <a href="contact.html" class="top-packages-custom-link">
+                                Plan Your Custom Safari <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="top-packages-all-link-wrap">
+                            <a href="safaris.html#packages" class="top-packages-all-link">
+                                <i class="fas fa-compass"></i> Explore All 22 Safari Itineraries &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Horizontally Scrollable Gallery (Exact 75% Width) -->
+                    <div class="top-packages-gallery-col">
+                        <!-- Blurred Exit Transition Under Introduction -->
+                        <div class="top-packages-exit-blur" id="topPackagesExitBlur" aria-hidden="true"></div>
+
+                        <!-- Far Left Navigation Arrow (At Left Boundary of Gallery) -->
+                        <button type="button" class="top-packages-gallery-arrow top-packages-arrow-prev" aria-label="Previous safari packages" title="Previous packages" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <!-- Gallery Track: Exactly 3 Packages Visible at a Time -->
+                        <div class="top-packages-gallery-track" id="topPackagesTrack" tabindex="0" role="region" aria-label="Top safari packages horizontal gallery">
+                            
+                            <!-- Card 1: 14 Days Uganda–Rwanda Combined -->
+                            <article class="top-package-card">
+                                <a href="packages/package-20.html" class="top-package-card-link">
+                                    <div class="top-package-media">
+                                        <img src="tour image/gorilla and baby.jpeg" alt="14 Days Uganda–Rwanda Gorilla Safari" loading="lazy">
+                                    </div>
+                                    <div class="top-package-body">
+                                        <h3 class="top-package-title">14 Days Uganda–Rwanda Gorilla Safari</h3>
+                                        <ul class="top-package-bullets">
+                                            <li>Gorilla trekking in Bwindi Impenetrable National Park</li>
+                                            <li>Chimpanzee tracking in Kibale Forest</li>
+                                            <li>Game drives and boat safari along Kazinga Channel</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <!-- Card 2: 15 Days Uganda Gorilla, Chimp & Big 5 -->
+                            <article class="top-package-card">
+                                <a href="packages/package-1.html" class="top-package-card-link">
+                                    <div class="top-package-media">
+                                        <img src="tour image/kidepo-valley-national giraffe.jpg" alt="15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari" loading="lazy">
+                                    </div>
+                                    <div class="top-package-body">
+                                        <h3 class="top-package-title">15 Days Uganda Gorilla, Chimpanzee &amp; Big 5 Safari</h3>
+                                        <ul class="top-package-bullets">
+                                            <li>Gorilla trekking in Bwindi Impenetrable National Park</li>
+                                            <li>A boat safari along the Nile at Murchison Falls</li>
+                                            <li>Chimpanzee tracking in Kibale Forest</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <!-- Card 3: 10 Days Rwanda – Akagera, Nyungwe & Volcanoes -->
+                            <article class="top-package-card">
+                                <a href="packages/package-14.html" class="top-package-card-link">
+                                    <div class="top-package-media">
+                                        <img src="tour image/rwanda/volcanoes-1.jpg" alt="10 Days Rwanda – Akagera, Nyungwe &amp; Volcanoes" loading="lazy">
+                                    </div>
+                                    <div class="top-package-body">
+                                        <h3 class="top-package-title">10 Days Rwanda – Akagera, Nyungwe &amp; Volcanoes</h3>
+                                        <ul class="top-package-bullets">
+                                            <li>Exploring Rwanda's Volcanoes National Park</li>
+                                            <li>Rainforest canopy walk &amp; primates in Nyungwe Forest</li>
+                                            <li>Big Five savannah wildlife viewing in Akagera</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <!-- Card 4: 11 Days Best of Uganda -->
+                            <article class="top-package-card">
+                                <a href="packages/package-2.html" class="top-package-card-link">
+                                    <div class="top-package-media">
+                                        <img src="tour image/tree climb lion queen elizabeth.jpg" alt="11 Days Best of Uganda Safari" loading="lazy">
+                                    </div>
+                                    <div class="top-package-body">
+                                        <h3 class="top-package-title">11 Days Best of Uganda Safari</h3>
+                                        <ul class="top-package-bullets">
+                                            <li>Game drives and wildlife viewing in Queen Elizabeth National Park</li>
+                                            <li>Gorilla trekking in Bwindi Impenetrable National Park</li>
+                                            <li>Golden monkey tracking in Mgahinga &amp; chimps in Kibale</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <!-- Card 5: 7 Days Rwanda Safari -->
+                            <article class="top-package-card">
+                                <a href="packages/package-15.html" class="top-package-card-link">
+                                    <div class="top-package-media">
+                                        <img src="tour image/rwanda/akagera-1.jpg" alt="7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera" loading="lazy">
+                                    </div>
+                                    <div class="top-package-body">
+                                        <h3 class="top-package-title">7 Days Rwanda – Nyungwe, Volcanoes &amp; Akagera</h3>
+                                        <ul class="top-package-bullets">
+                                            <li>Mountain gorilla trekking beneath the Virunga Volcanoes</li>
+                                            <li>High-altitude canopy walkway in Nyungwe Forest</li>
+                                            <li>Classic savannah game drives in Akagera National Park</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <!-- Card 6: 8 Days Gorilla Habituation -->
+                            <article class="top-package-card">
+                                <a href="packages/package-3.html" class="top-package-card-link">
+                                    <div class="top-package-media">
+                                        <img src="tour image/lion on rock.jpeg" alt="8 Days Gorilla Habituation &amp; Wildlife Safari" loading="lazy">
+                                    </div>
+                                    <div class="top-package-body">
+                                        <h3 class="top-package-title">8 Days Gorilla Habituation &amp; Wildlife Safari</h3>
+                                        <ul class="top-package-bullets">
+                                            <li>Exclusive 4-hour gorilla habituation in Bwindi Forest</li>
+                                            <li>A boat safari along the Nile at Murchison Falls</li>
+                                            <li>Chimpanzee tracking in Kibale Forest</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </article>
+
+                        </div>
+
+                        <!-- Far Right Navigation Arrow (At Right Boundary of Gallery) -->
+                        <button type="button" class="top-packages-gallery-arrow top-packages-arrow-next" aria-label="Next safari packages" title="Next packages">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. The Spirit of Africa (Polygon Gallery Section) -->
+        <section class="spirit-polygon-section animate-on-scroll" id="spirit">
+            <div class="spirit-polygon-grid">
+                <!-- Left Column: Heading & Intro -->
+                <div class="spirit-polygon-text">
+                    <div class="spirit-polygon-text-inner">
+                        <h2 class="spirit-polygon-heading">The Spirit of<br>Africa</h2>
+                        <div class="spirit-polygon-underline"></div>
+                        <p class="spirit-polygon-intro">
+                            <em>Experience the magic of Africa — breathtaking wildlife, wild adventures, and unforgettable moments. Are you ready?</em>
+                        </p>
+                    </div>
+                </div>
+                <!-- Right Column: Five Polygon Image Panels -->
+                <div class="spirit-polygon-gallery">
+                    <!-- Panel 1: Gorilla -->
+                    <div class="spirit-polygon-panel" data-panel="1">
+                        <div class="spirit-polygon-frame spirit-polygon-frame--1">
+                            <img src="tour image/bwindi silverback gorilla.png"
+                                 alt="Mountain gorilla in Bwindi Impenetrable Forest"
+                                 loading="lazy">
+                            <div class="spirit-polygon-overlay">
+                                <p class="spirit-polygon-caption">Encounter the gentle giants of Bwindi Impenetrable Forest.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel 2: Lion -->
+                    <div class="spirit-polygon-panel" data-panel="2">
+                        <div class="spirit-polygon-frame spirit-polygon-frame--2">
+                            <img src="tour image/field images/buffaloz.jpeg"
+                                 alt="African male lion resting in the golden savannah grass"
+                                 loading="lazy">
+                            <div class="spirit-polygon-overlay">
+                                <p class="spirit-polygon-caption">Witness the power and majesty of Africa's great predators.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel 3: Giraffe -->
+                    <div class="spirit-polygon-panel" data-panel="3">
+                        <div class="spirit-polygon-frame spirit-polygon-frame--3">
+                            <img src="tour image/field images/leopard grass.jpeg"
+                                 alt="Giraffe browsing acacia trees during an evening game drive"
+                                 loading="lazy">
+                            <div class="spirit-polygon-overlay">
+                                <p class="spirit-polygon-caption">Discover the beauty of Africa's golden savannahs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel 4: Sunset -->
+                    <div class="spirit-polygon-panel" data-panel="4">
+                        <div class="spirit-polygon-frame spirit-polygon-frame--4">
+                            <img src="tour image/field images/sunset at nkonya.jpeg"
+                                 alt="Breathtaking African wilderness sunset overlooking safari lodge"
+                                 loading="lazy">
+                            <div class="spirit-polygon-overlay">
+                                <p class="spirit-polygon-caption">Experience unforgettable sunsets across the African wilderness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel 5: Elephant -->
+                    <div class="spirit-polygon-panel" data-panel="5">
+                        <div class="spirit-polygon-frame spirit-polygon-frame--5">
+                            <img src="tour image/field images/elep in lodge compound.jpeg"
+                                 alt="African elephant roaming across the vast savannah plains under an acacia tree"
+                                 loading="lazy">
+                            <div class="spirit-polygon-overlay">
+                                <p class="spirit-polygon-caption">Meet Africa's magnificent giants in their natural habitat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Field Notes & Stories (Magazine-Style Editorial) -->
+        <div class="container">
+            <section class="editorial-surface animate-on-scroll" id="articles">
+                <div class="editorial-header">
+                    <span class="editorial-eyebrow">Field Notes &amp; Destination Guides</span>
+                    <h2 class="editorial-title">Safari Insights &amp; Stories</h2>
+                    <div class="editorial-divider"></div>
+                    <p class="editorial-subtitle">
+                        Immerse yourself in East Africa's most remarkable ecosystems through our destination guides — from primeval gorilla jungles to thundering river gorges and vast savannah wilderness.
+                    </p>
+                </div>
+
+                <div class="editorial-articles-layout">
+                    
+                    <!-- Featured Article (Lead Story) -->
+                    <div class="featured-article-lead">
+                        <div class="featured-article-media">
+                            <img src="tour image/gorilla and baby.jpeg" alt="Mountain gorilla family in Bwindi Impenetrable Forest" loading="lazy">
+                            <span class="featured-article-badge">Featured Destination</span>
+                        </div>
+                        <div class="featured-article-meta">
+                            <span><i class="far fa-calendar-alt"></i> May 2025</span>
+                            <span>&bull;</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                            <span>&bull;</span>
+                            <span style="color: var(--color-primary); font-weight: 600;">Gorilla Trekking</span>
+                        </div>
+                        <h3 class="featured-article-title">
+                            <a href="articles/bwindi.html">Bwindi Impenetrable National Park – Sanctuary of the Mountain Gorilla</a>
+                        </h3>
+                        <p class="featured-article-excerpt">
+                            Deep in the mist-veiled highlands of southwestern Uganda lies one of Africa’s most ancient ecosystems. Believed to be over 25,000 years old, Bwindi’s primeval rainforest shelters half of the world’s surviving mountain gorillas. Here is your essential guide to trekking etiquette, seasonal timing, and the emotional power of this UNESCO World Heritage encounter.
+                        </p>
+                        <div>
+                            <a href="articles/bwindi.html" class="btn-link" style="font-weight: 700; color: var(--color-primary); font-size: 0.95rem;">
+                                Read Field Guide <i class="fas fa-arrow-right" style="margin-left: 6px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Supporting Articles Stack -->
+                    <div class="supporting-articles-stack">
+                        
+                        <!-- Supporting 1: Murchison Falls -->
+                        <article class="supporting-article-item">
+                            <div class="supporting-article-thumb">
+                                <img src="tour image/muchsion falls.jpeg" alt="Murchison Falls National Park" loading="lazy">
+                            </div>
+                            <div>
+                                <div class="supporting-article-tag">National Park</div>
+                                <h4 class="supporting-article-title">
+                                    <a href="articles/murchison.html">Murchison Falls – Uganda's Greatest Safari Adventure</a>
+                                </h4>
+                                <p class="supporting-article-excerpt">
+                                    The Victoria Nile thunders through an 8-meter gorge into the Devil’s Cauldron, surrounded by 550+ bird species and rich game drives.
+                                </p>
+                                <a href="articles/murchison.html" class="supporting-article-link">
+                                    Read Guide <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <hr class="article-item-divider">
+
+                        <!-- Supporting 2: Queen Elizabeth -->
+                        <article class="supporting-article-item">
+                            <div class="supporting-article-thumb">
+                                <img src="tour image/tree climb lion queen elizabeth.jpg" alt="Queen Elizabeth National Park lions" loading="lazy">
+                            </div>
+                            <div>
+                                <div class="supporting-article-tag">Wildlife Safari</div>
+                                <h4 class="supporting-article-title">
+                                    <a href="articles/queen-elizabeth.html">Queen Elizabeth National Park – Crown Jewel of Biodiversity</a>
+                                </h4>
+                                <p class="supporting-article-excerpt">
+                                    Famed for Ishasha’s tree-climbing lions, Kazinga Channel hippos, and panoramic vistas against the Rwenzori Mountains.
+                                </p>
+                                <a href="articles/queen-elizabeth.html" class="supporting-article-link">
+                                    Read Guide <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <hr class="article-item-divider">
+
+                        <!-- Supporting 3: Kibale Forest -->
+                        <article class="supporting-article-item">
+                            <div class="supporting-article-thumb">
+                                <img src="tour image/kibale monkey 2.webp" alt="Kibale Forest chimpanzees" loading="lazy">
+                            </div>
+                            <div>
+                                <div class="supporting-article-tag">Primate Capital</div>
+                                <h4 class="supporting-article-title">
+                                    <a href="articles/kibale.html">Kibale Forest – The Primate Capital of the World</a>
+                                </h4>
+                                <p class="supporting-article-excerpt">
+                                    Home to 1,500 wild chimpanzees and 13 primate species, offering an unforgettable 90%+ sighting rate on guided rainforest walks.
+                                </p>
+                                <a href="articles/kibale.html" class="supporting-article-link">
+                                    Read Guide <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                    </div><!-- /.supporting-articles-stack -->
+
+                </div><!-- /.editorial-articles-layout -->
+
+                <div class="articles-editorial-cta">
+                    <a href="destinations.html" class="btn btn-primary">
+                        Explore All Destination Guides <i class="fas fa-arrow-right" style="margin-left: 6px;"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- 4. Why Travel with Bora East Africa Safaris (Clean 3-Column Editorial) -->
+        <div class="container">
+            <section class="editorial-surface animate-on-scroll" id="why-us">
+                <div class="editorial-header text-center">
+                    <span class="editorial-eyebrow">The Bora East Africa Safaris Difference</span>
+                    <h2 class="editorial-title">Why Travel With Us?</h2>
+                    <div class="editorial-divider"></div>
+                </div>
+
+                <div class="editorial-why-grid">
+                    <div class="editorial-why-col">
+                        <div class="editorial-why-icon-wrap">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="editorial-why-title">Local Native Expertise</h3>
+                        <p class="editorial-why-text">
+                            Our licensed safari directors are born and raised in Uganda and Rwanda. They possess generational knowledge of animal migration paths, seasonal behaviors, and cultural traditions that guidebooks simply cannot offer.
+                        </p>
+                    </div>
+
+                    <div class="editorial-why-col">
+                        <div class="editorial-why-icon-wrap">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="editorial-why-title">Safety, Comfort &amp; Care</h3>
+                        <p class="editorial-why-text">
+                            Your well-being is our highest commitment. We operate private 4×4 custom-built safari cruisers equipped with pop-up roofs, onboard charging ports, satellite communication, and partnering hand-selected boutique eco-lodges.
+                        </p>
+                    </div>
+
+                    <div class="editorial-why-col">
+                        <div class="editorial-why-icon-wrap">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="editorial-why-title">Responsible Conservation</h3>
+                        <p class="editorial-why-text">
+                            Every safari directly funds gorilla conservation permits, anti-poaching ranger patrols, and sustainable community empowerment initiatives in the villages bordering national parks.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 5. Final Call to Action (Deep Forest Green Section) -->
+        <div class="container">
+            <section class="editorial-cta-section animate-on-scroll" id="plan-safari">
+                <span class="cta-eyebrow">Start Your Journey</span>
+                <h2 class="cta-title">Ready to Plan Your East African Safari?</h2>
+                <p class="cta-description">
+                    Whether you wish to walk alongside mountain gorillas in Bwindi, cruise beneath the thunder of Murchison Falls, or experience Rwanda’s breathtaking volcanic vistas, our safari specialists are ready to craft your bespoke journey.
+                </p>
+                <div class="cta-actions-group">
+                    <a href="contact.html" class="btn-cta-gold">
+                        <i class="fas fa-paper-plane"></i> Plan Your Safari Inquiry
+                    </a>
+                    <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" class="btn-cta-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                    </a>
+                </div>
+                <p class="cta-homestay-note">
+                    Looking for a deeply authentic cultural immersion? Discover the <a href="nkonya-homestay.html">Nkonya Village Homestay</a> — traditional hospitality, culinary traditions, and village life.
+                </p>
+            </section>
+        </div>
+
+    </div><!-- /.main-content-bg -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Bora East Africa Safaris<span class="logo-dot">.</span></h3>
+                <p>Your trusted partner for authentic African safaris and adventures. Start your journey in the Pearl of
+                    Africa and explore the continent's most breathtaking destinations.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61596210129835" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256755899925" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="safaris.html">Safaris</a></li>
+                    <li><a href="destinations.html">Destination Guides</a></li>
+                    <li><a href="nkonya-homestay.html">Nkonya Homestay</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 702 413 933</p>
+                <p><i class="fas fa-envelope"></i> info@borasafaris.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bora East Africa Safaris. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
