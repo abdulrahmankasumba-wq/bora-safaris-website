@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Local Fonts -->
+    <link rel="preload" href="fonts/Midate.otf" as="font" type="font/otf" crossorigin>
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,6 +35,7 @@
                 <a href="about.html">About</a>
                 <a href="safaris.html">Safaris</a>
                 <a href="destinations.html" class="active">Destinations</a>
+                <a href="blog.html">Blog</a>
                 <a href="nkonya-homestay.html">Homestay</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html" class="btn btn-primary nav-btn">Book Now</a>
@@ -113,7 +117,7 @@
                     </div>
                     <div class="articles-grid">
                         <!-- Bwindi — Featured -->
-                        <article class="article-card article-card--featured" id="hub-bwindi">
+                        <a href="articles/bwindi.html" class="article-card" id="hub-bwindi" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/gorilla and baby.jpeg"
                                     alt="Mountain gorilla in Bwindi Impenetrable Forest" loading="lazy">
@@ -123,13 +127,13 @@
                                 <time class="article-date">May 2025</time>
                                 <h3 class="article-card__title">Bwindi Impenetrable National Park – Home of the Mountain Gorilla</h3>
                                 <p class="article-card__excerpt">Believed to be over 25,000 years old, Bwindi's dense jungle shelters approximately half of the world's remaining mountain gorillas — offering a once-in-a-lifetime trekking encounter in a UNESCO World Heritage rainforest with 400+ plant species and over 120 mammals.</p>
-                                <a href="articles/bwindi.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Murchison -->
-                        <article class="article-card" id="hub-murchison">
+                        <a href="articles/murchison.html" class="article-card" id="hub-murchison" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/muchsion falls.jpeg" alt="Murchison Falls National Park"
                                     loading="lazy">
@@ -139,13 +143,13 @@
                                 <time class="article-date">April 2025</time>
                                 <h3 class="article-card__title">Murchison Falls – Uganda's Greatest Safari Adventure</h3>
                                 <p class="article-card__excerpt">The Victoria Nile squeezes through a narrow 8-metre gorge and thunders 45 metres into the Devil's Cauldron. Uganda's largest park hosts 144 mammal species and 556 bird species.</p>
-                                <a href="articles/murchison.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Queen Elizabeth -->
-                        <article class="article-card" id="hub-queen-elizabeth">
+                        <a href="articles/queen-elizabeth.html" class="article-card" id="hub-queen-elizabeth" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/tree climb lion queen elizabeth.jpg"
                                     alt="Queen Elizabeth National Park" loading="lazy">
@@ -155,13 +159,13 @@
                                 <time class="article-date">March 2025</time>
                                 <h3 class="article-card__title">Queen Elizabeth NP – Uganda's Crown Jewel of Biodiversity</h3>
                                 <p class="article-card__excerpt">Home to the world-famous tree-climbing lions of Ishasha, 600+ bird species, and the spectacular Kazinga Channel boat safari — Uganda's most visited safari destination.</p>
-                                <a href="articles/queen-elizabeth.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Kibale -->
-                        <article class="article-card" id="hub-kibale">
+                        <a href="articles/kibale.html" class="article-card" id="hub-kibale" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/kibale monkey 2.webp" alt="Kibale National Park chimpanzees"
                                     loading="lazy">
@@ -171,13 +175,13 @@
                                 <time class="article-date">February 2025</time>
                                 <h3 class="article-card__title">Kibale Forest – The Primate Capital of the World</h3>
                                 <p class="article-card__excerpt">Over 1,500 wild chimpanzees, 13 primate species, and a 90%+ chimp sighting success rate make Kibale's Kanyanchu Primate Walk Uganda's most thrilling wildlife encounter.</p>
-                                <a href="articles/kibale.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Kidepo -->
-                        <article class="article-card" id="hub-kidepo">
+                        <a href="articles/kidepo.html" class="article-card" id="hub-kidepo" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/kidepo-valley-national giraffe.jpg" alt="Kidepo Valley National Park"
                                     loading="lazy">
@@ -187,13 +191,13 @@
                                 <time class="article-date">January 2025</time>
                                 <h3 class="article-card__title">Kidepo Valley – Uganda's Untamed Wilderness Safari</h3>
                                 <p class="article-card__excerpt">Remote and spectacular, Kidepo offers vast golden savannas, 77 mammal species, 476 bird species, and Uganda's only wild ostriches in one of Africa's most unspoiled parks.</p>
-                                <a href="articles/kidepo.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Mgahinga -->
-                        <article class="article-card" id="hub-mgahinga">
+                        <a href="articles/mgahinga.html" class="article-card" id="hub-mgahinga" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/golden money mgahinga.png"
                                     alt="Mgahinga Gorilla National Park volcanoes" loading="lazy">
@@ -203,13 +207,13 @@
                                 <time class="article-date">December 2024</time>
                                 <h3 class="article-card__title">Mgahinga Gorilla NP – Uganda's Hidden Mountain Paradise</h3>
                                 <p class="article-card__excerpt">Perched above 2,200m in the Virunga Mountains, Uganda's smallest park offers gorilla trekking, rare golden monkey tracking, and the Batwa cultural trail among three ancient volcanoes.</p>
-                                <a href="articles/mgahinga.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Rwenzori -->
-                        <article class="article-card" id="hub-rwenzori">
+                        <a href="articles/rwenzori.html" class="article-card" id="hub-rwenzori" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/mt rwenzori Margherita-Peak-w.png" alt="Rwenzori Mountains of the Moon"
                                     loading="lazy">
@@ -219,13 +223,13 @@
                                 <time class="article-date">November 2024</time>
                                 <h3 class="article-card__title">Rwenzori Mountains – The Legendary Mountains of the Moon</h3>
                                 <p class="article-card__excerpt">Africa's third-highest peak at 5,109m, a UNESCO World Heritage Site with snow-capped summits, glacial valleys, giant lobelias, and 217 bird species in a mythical mountain setting.</p>
-                                <a href="articles/rwenzori.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Mount Elgon -->
-                        <article class="article-card" id="hub-mt-elgon">
+                        <a href="articles/mt-elgon.html" class="article-card" id="hub-mt-elgon" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/mt elgon 2.png" alt="Mount Elgon National Park" loading="lazy">
                                 <span class="article-tag">Trekking</span>
@@ -234,13 +238,13 @@
                                 <time class="article-date">October 2024</time>
                                 <h3 class="article-card__title">Mount Elgon – The Ancient Giant of East Africa</h3>
                                 <p class="article-card__excerpt">Formed 24 million years ago with the world's largest volcanic base (4,000 km²) — Sipi Falls, one of Earth's largest calderas, forest elephants in Kitum Cave, and the vibrant Bagisu Imbalu ceremonies.</p>
-                                <a href="articles/mt-elgon.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Lake Mburo -->
-                        <article class="article-card" id="hub-lake-mburo">
+                        <a href="articles/lake-mburo.html" class="article-card" id="hub-lake-mburo" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/Zebras-in-Lake-Mburo-NP.jpg" alt="Lake Mburo National Park zebras"
                                     loading="lazy">
@@ -250,13 +254,13 @@
                                 <time class="article-date">September 2024</time>
                                 <h3 class="article-card__title">Lake Mburo – Uganda's Compact Safari Gem</h3>
                                 <p class="article-card__excerpt">Just 228 km from Kampala — Uganda's only zebras and impalas, 315+ bird species, boat rides on shimmering lakes, and guided walking safaris in a beautifully compact ecosystem.</p>
-                                <a href="articles/lake-mburo.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Semuliki -->
-                        <article class="article-card" id="hub-semuliki">
+                        <a href="articles/semuliki.html" class="article-card" id="hub-semuliki" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/Sempaya-Hotsprings semulik.jpg" alt="Semuliki National Park rainforest"
                                     loading="lazy">
@@ -266,13 +270,13 @@
                                 <time class="article-date">August 2024</time>
                                 <h3 class="article-card__title">Semuliki NP – Uganda's Gateway to Central Africa</h3>
                                 <p class="article-card__excerpt">East Africa's only true lowland tropical rainforest — 435 bird species, rare Congo Basin wildlife, and the dramatic Sempaya Hot Springs, geothermal vents hot enough to boil eggs.</p>
-                                <a href="articles/semuliki.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
  
                         <!-- Safari Activities in Uganda -->
-                        <article class="article-card" id="hub-safari-activities">
+                        <a href="articles/safari-activities.html" class="article-card" id="hub-safari-activities" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/safari_activities_thumb.png" alt="White water rafting on the Nile in Uganda"
                                     loading="lazy">
@@ -282,10 +286,10 @@
                                 <time class="article-date">July 2026</time>
                                 <h3 class="article-card__title">Safari Activities in Uganda – Adventures Beyond Wildlife</h3>
                                 <p class="article-card__excerpt">From white-water rafting on the Nile and mountaineering in the Rwenzoris to cultural visits and bird watching, explore the thrilling adventures that make Uganda the ultimate safari destination.</p>
-                                <a href="articles/safari-activities.html" class="article-read-more">Read Full Article <i
-                                        class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i
+                                        class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
                     </div>
                 </div>
 
@@ -297,7 +301,7 @@
                     </div>
                     <div class="articles-grid">
                         <!-- Akagera — Featured -->
-                        <article class="article-card article-card--featured" id="hub-akagera">
+                        <a href="articles/akagera.html" class="article-card" id="hub-akagera" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/rwanda/akagera-1.jpg" alt="Akagera National Park Big Five Safari" loading="lazy">
                                 <span class="article-tag">Big Five Safari</span>
@@ -306,12 +310,12 @@
                                 <time class="article-date">August 2026</time>
                                 <h3 class="article-card__title">Akagera National Park – Rwanda’s Big Five Safari Adventure</h3>
                                 <p class="article-card__excerpt">Rwanda's premier savannah safari destination featuring the Big Five (lion, leopard, elephant, buffalo, rhino), Lake Ihema boat cruises, and nearly 490 bird species in a remarkable conservation success story.</p>
-                                <a href="articles/akagera.html" class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Nyungwe -->
-                        <article class="article-card" id="hub-nyungwe">
+                        <a href="articles/nyungwe.html" class="article-card" id="hub-nyungwe" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/rwanda/nyungwe-1.jpg" alt="Nyungwe National Park Canopy Walkway" loading="lazy">
                                 <span class="article-tag">Ancient Rainforest</span>
@@ -320,12 +324,12 @@
                                 <time class="article-date">August 2026</time>
                                 <h3 class="article-card__title">Nyungwe National Park – Into Rwanda’s Ancient Rainforest</h3>
                                 <p class="article-card__excerpt">Trek wild chimpanzees, encounter 13 primate species, walk 70m high on the famous Canopy Walkway, and explore 320+ bird species in an ancient mountain rainforest.</p>
-                                <a href="articles/nyungwe.html" class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Volcanoes -->
-                        <article class="article-card" id="hub-volcanoes">
+                        <a href="articles/volcanoes.html" class="article-card" id="hub-volcanoes" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/rwanda/volcanoes-1.jpg" alt="Volcanoes National Park Mountain Gorilla Trekking" loading="lazy">
                                 <span class="article-tag">Gorilla Trekking</span>
@@ -334,12 +338,12 @@
                                 <time class="article-date">August 2026</time>
                                 <h3 class="article-card__title">Volcanoes National Park – Kingdom of Mountain Gorillas</h3>
                                 <p class="article-card__excerpt">Stand in awe before mountain gorillas beneath the misty Virunga peaks. Track rare golden monkeys and explore Dian Fossey's historic gorilla research heritage.</p>
-                                <a href="articles/volcanoes.html" class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
 
                         <!-- Gishwati-Mukura -->
-                        <article class="article-card" id="hub-gishwati">
+                        <a href="articles/gishwati-mukura.html" class="article-card" id="hub-gishwati" aria-label="Read destination guide">
                             <div class="article-card__image-wrap">
                                 <img src="tour image/rwanda/gishwati-1.jpg" alt="Gishwati-Mukura National Park Forest" loading="lazy">
                                 <span class="article-tag">Forest Treasure</span>
@@ -348,9 +352,9 @@
                                 <time class="article-date">August 2026</time>
                                 <h3 class="article-card__title">Gishwati-Mukura NP – Rwanda’s Hidden Forest Treasure</h3>
                                 <p class="article-card__excerpt">Discover Rwanda's 4th national park offering intimate chimpanzee tracking, golden monkeys, Albertine Rift birding, tea plantation tours, and Lake Kivu views.</p>
-                                <a href="articles/gishwati-mukura.html" class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                                <span class="article-read-more">Read Full Article <i class="fas fa-arrow-right"></i></span>
                             </div>
-                        </article>
+                        </a>
                     </div>
                 </div>
 
@@ -397,6 +401,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="safaris.html">Safari Packages</a></li>
                     <li><a href="destinations.html">Destination Guides</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="nkonya-homestay.html">Nkonya Homestay</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>

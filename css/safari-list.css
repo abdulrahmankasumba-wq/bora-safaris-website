@@ -136,7 +136,7 @@ body.safaris-directory-page main > * {
     border: 1px solid rgba(255, 255, 255, 0.22);
     color: #F8FAFC;
     padding: 0.45rem 0.95rem;
-    border-radius: 50px;
+    border-radius: 6px;
     font-size: 0.84rem;
     font-weight: 600;
     letter-spacing: 0.02em;
@@ -163,7 +163,7 @@ body.safaris-directory-page main > * {
 
 .safari-hero-card {
     background: #ffffff;
-    border-radius: 16px;
+    border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -240,7 +240,7 @@ body.safaris-directory-page main > * {
 .safaris-intro-card {
     background-color: #FFFFFF;
     border: 1px solid #E5E0D5;
-    border-radius: 18px;
+    border-radius: 6px;
     padding: 2.5rem 2.25rem 2rem;
     margin-bottom: 2.25rem;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
@@ -280,7 +280,7 @@ body.safaris-directory-page main > * {
     background: var(--color-primary);
     color: #ffffff;
     border: none;
-    border-radius: 50px;
+    border-radius: 6px;
     font-family: var(--font-body);
     font-size: 0.95rem;
     font-weight: 600;
@@ -320,7 +320,7 @@ body.safaris-directory-page main > * {
     color: #111827;
     font-size: 0.7rem;
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: 6px;
     padding: 0 5px;
     line-height: 1;
 }
@@ -334,7 +334,7 @@ body.safaris-directory-page main > * {
     width: 340px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
+    border-radius: 6px;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
     padding: 1.5rem;
     animation: pkgFadeSlideDown 0.2s ease;
@@ -410,7 +410,7 @@ body.safaris-directory-page main > * {
     background: #F9FAFB;
     color: #374151;
     border: 1.5px solid #E5E7EB;
-    border-radius: 50px;
+    border-radius: 6px;
     font-family: inherit;
     font-size: 0.82rem;
     font-weight: 500;
@@ -448,7 +448,7 @@ body.safaris-directory-page main > * {
     width: 100%;
     padding: 0.6rem 2.2rem 0.6rem 2.2rem;
     border: 1.5px solid #E5E7EB;
-    border-radius: 50px;
+    border-radius: 6px;
     font-family: inherit;
     font-size: 0.88rem;
     color: var(--color-text-main);
@@ -486,7 +486,7 @@ body.safaris-directory-page main > * {
     background: #F3F4F6;
     color: #4B5563;
     border: none;
-    border-radius: 50px;
+    border-radius: 6px;
     padding: 0.55rem 1rem;
     font-family: var(--font-body);
     font-size: 0.85rem;
@@ -505,7 +505,7 @@ body.safaris-directory-page main > * {
     background: var(--color-primary);
     color: #ffffff;
     border: none;
-    border-radius: 50px;
+    border-radius: 6px;
     padding: 0.55rem 1.25rem;
     font-family: var(--font-body);
     font-size: 0.88rem;
@@ -532,7 +532,7 @@ body.safaris-directory-page main > * {
     background: rgba(58, 142, 88, 0.1);
     color: var(--color-primary);
     border: 1px solid rgba(58, 142, 88, 0.25);
-    border-radius: 50px;
+    border-radius: 6px;
     padding: 0.3rem 0.75rem;
     font-size: 0.8rem;
     font-weight: 600;
@@ -593,7 +593,7 @@ body.safaris-directory-page main > * {
     background-color: #1A4A2E; /* Forest Green */
     color: #ffffff;
     padding: 1.15rem 1.75rem;
-    border-radius: 12px 12px 0 0;
+    border-radius: 6px 6px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -625,7 +625,7 @@ body.safaris-directory-page main > * {
     color: rgba(255, 255, 255, 0.95);
     background: rgba(255, 255, 255, 0.16);
     padding: 0.28rem 0.8rem;
-    border-radius: 50px;
+    border-radius: 6px;
     letter-spacing: 0.02em;
 }
 
@@ -634,7 +634,7 @@ body.safaris-directory-page main > * {
     background-color: #FFFFFF;
     border: 1px solid #E2DBD0;
     border-top: none;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 6px 6px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
 }
@@ -744,7 +744,7 @@ body.safaris-directory-page main > * {
 .safari-sidebar-card {
     background-color: #FFFFFF;
     border: 1px solid #E5E0D5;
-    border-radius: 18px;
+    border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease;
@@ -786,7 +786,7 @@ body.safaris-directory-page main > * {
     font-weight: 700;
     letter-spacing: 0.06em;
     padding: 0.35rem 0.8rem;
-    border-radius: 50px;
+    border-radius: 6px;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -944,7 +944,7 @@ body.safaris-directory-page main > * {
 .pkg-no-results {
     background: #FFFFFF;
     border: 1px dashed #D1C9BE;
-    border-radius: 14px;
+    border-radius: 6px;
     padding: 3.5rem 2rem;
     text-align: center;
     margin-top: 1rem;
@@ -1042,7 +1042,7 @@ body.safaris-directory-page main > * {
 
     .safaris-intro-card {
         padding: 1.6rem 1.2rem 1.4rem;
-        border-radius: 14px;
+        border-radius: 6px;
     }
 
     .safari-sidebar-card__img-wrap {
@@ -1076,7 +1076,7 @@ body.safaris-directory-page main > * {
     align-items: center;
     background: #F3EFE6;
     padding: 3px;
-    border-radius: 999px;
+    border-radius: 6px;
     border: 1px solid rgba(220, 215, 204, 0.85);
     gap: 3px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -1092,7 +1092,7 @@ body.safaris-directory-page main > * {
     font-size: 0.82rem;
     font-weight: 600;
     color: #5A6578;
-    border-radius: 999px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     font-family: inherit;
@@ -1146,7 +1146,7 @@ body.safaris-directory-page main > * {
 .pkg-card {
     background: #FFFFFF;
     border: 1px solid rgba(220, 215, 204, 0.85);
-    border-radius: 14px;
+    border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
     transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
@@ -1200,7 +1200,7 @@ body.safaris-directory-page main > * {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     padding: 4px 10px;
-    border-radius: 20px;
+    border-radius: 6px;
     backdrop-filter: blur(4px);
     z-index: 2;
 }
@@ -1214,7 +1214,7 @@ body.safaris-directory-page main > * {
     font-size: 0.74rem;
     font-weight: 700;
     padding: 4px 10px;
-    border-radius: 20px;
+    border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     z-index: 2;
     display: inline-flex;

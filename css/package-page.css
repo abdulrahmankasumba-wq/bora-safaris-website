@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    PACKAGE DETAIL PAGE STYLES — Bora East Africa Safaris
    Clean, Elegant Modern Safari Itinerary Layout
    Subtle African animal-pattern background with solid white
@@ -135,7 +135,7 @@ body.package-detail-page footer {
     max-width: 1200px;
     margin: 1.25rem auto 3.5rem auto;
     background-color: #ffffff !important;
-    border-radius: 14px;
+    border-radius: 6px;
     border: 1px solid rgba(220, 215, 204, 0.75);
     box-shadow: 
         0 2px 8px rgba(0, 0, 0, 0.03),
@@ -151,7 +151,7 @@ body.package-detail-page footer {
    Sitting cleanly on the solid white content layer
    ============================================================ */
 .pkg-intro-block {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .pkg-intro-meta {
@@ -214,8 +214,8 @@ body.package-detail-page footer {
     font-size: 0.98rem;
     color: #4B5563;
     line-height: 1.55;
-    margin-bottom: 1.75rem;
-    padding-bottom: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #F0ECE4;
 }
 
@@ -226,60 +226,15 @@ body.package-detail-page footer {
     flex-shrink: 0;
 }
 
-/* Intro Grid: Highlights & benefits on left, photo on right */
-.pkg-intro-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 2.75rem;
-    align-items: center;
-}
-
-.pkg-intro-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.pkg-overview-title {
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
-    color: #143321;
-    margin: 0 0 0.85rem;
-    font-weight: 700;
-}
-
-.pkg-highlights-list {
-    list-style: none;
-    margin: 0 0 1.5rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.65rem;
-}
-
-.pkg-highlights-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.65rem;
-    font-size: 0.96rem;
-    color: #374151;
-    line-height: 1.5;
-}
-
-.pkg-highlights-list i {
-    color: var(--color-primary);
-    font-size: 0.9rem;
-    margin-top: 4px;
-    flex-shrink: 0;
-}
-
 .pkg-key-benefits {
     display: flex;
     gap: 1.25rem;
     flex-wrap: wrap;
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     color: #4A5568;
-    padding-top: 0.75rem;
-    border-top: 1px dashed #E5E0D6;
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
 }
 
 .pkg-key-benefits span {
@@ -293,15 +248,118 @@ body.package-detail-page footer {
     font-size: 0.8rem;
 }
 
-.pkg-intro-media {
-    position: relative;
+/* ============================================================
+   POLAROID-STYLE ITINERARY IMAGES
+   Positioned in the right-hand column directly above Safari Summary
+   Realistic Polaroid presentation with subtle tilt, clean white frame,
+   thicker bottom border, and delicate depth shadow.
+   ============================================================ */
+.itinerary-polaroids-aside {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.pkg-intro-media img {
+.polaroid-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.polaroid-card {
+    margin: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* Clean white Polaroid frame with thicker bottom border: 10px top/sides, 18px bottom */
+    padding: 10px 10px 18px 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(220, 215, 204, 0.75);
+    box-shadow: 
+        0 4px 14px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+    will-change: transform;
+}
+
+/* Subtle, tasteful tilt angles for natural photographic look */
+.polaroid-card--top,
+.polaroid-card--tilt-left {
+    transform: rotate(-1.5deg);
+    z-index: 1;
+}
+
+.polaroid-card--bottom,
+.polaroid-card--tilt-right {
+    transform: rotate(1.2deg);
+    z-index: 2;
+}
+
+/* Subtle hover lift */
+.polaroid-card--top:hover,
+.polaroid-card--tilt-left:hover {
+    transform: translateY(-3px) rotate(-0.8deg);
+    box-shadow: 
+        0 10px 24px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.05);
+    z-index: 3;
+}
+
+.polaroid-card--bottom:hover,
+.polaroid-card--tilt-right:hover {
+    transform: translateY(-3px) rotate(0.8deg);
+    box-shadow: 
+        0 10px 24px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.05);
+    z-index: 3;
+}
+
+.polaroid-img-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: #E2E8F0;
+    border-radius: 2px;
+}
+
+/* Image sizing: consistent dimensions fitting comfortably within right column */
+.polaroid-img-wrap img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+    transition: transform 0.4s ease;
+}
+
+.polaroid-card:hover .polaroid-img-wrap img {
+    transform: scale(1.02);
+}
+
+/* Polaroid bottom chin caption */
+.polaroid-caption {
+    font-size: 0.78rem;
+    color: #4A5568;
+    font-style: italic;
+    margin-top: 0.55rem;
+    margin-bottom: 0.1rem;
+    text-align: center;
+    line-height: 1.35;
+    padding: 0 0.35rem;
+    letter-spacing: 0.01em;
+}
+
+/* Legacy fallback support */
+.pkg-intro-media > img {
     width: 100%;
     height: 310px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 6px;
     display: block;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
 }
@@ -321,7 +379,7 @@ body.package-detail-page footer {
 .pkg-divider {
     border: none;
     border-top: 1px solid #ECE7DF;
-    margin: 3rem 0;
+    margin: 1.75rem 0;
 }
 
 .pkg-itinerary-grid {
@@ -376,32 +434,37 @@ body.package-detail-page footer {
 
 .itinerary-day-header {
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 0.85rem;
     flex-wrap: wrap;
 }
 
 .itinerary-day-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.06em;
-    color: #245A36;
-    background: rgba(36, 90, 54, 0.08);
-    padding: 0.22rem 0.65rem;
-    border-radius: 4px;
+    color: #FFFFFF;
+    background: #1B4D2E;
+    padding: 0.28rem 0.75rem;
+    border-radius: 5px;
     text-transform: uppercase;
     flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(15, 38, 24, 0.15);
 }
 
 .itinerary-day-title {
     font-family: var(--font-heading);
-    font-size: 1.22rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    color: #143321;
+    color: #0F2618;
     margin: 0;
-    line-height: 1.35;
+    line-height: 1.32;
+    letter-spacing: -0.012em;
 }
 
 .itinerary-day-bullets {
@@ -438,7 +501,7 @@ body.package-detail-page footer {
     top: 90px;
     background: #FAF8F5;
     border: 1px solid #EAE4DA;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 1.85rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
 }
@@ -503,7 +566,7 @@ body.package-detail-page footer {
     padding: 0.85rem 1.25rem;
     background: var(--color-primary);
     color: #ffffff !important;
-    border-radius: 50px;
+    border-radius: 6px;
     font-size: 0.95rem;
     font-weight: 700;
     text-decoration: none;
@@ -528,7 +591,7 @@ body.package-detail-page footer {
     padding: 0.82rem 1.25rem;
     background: #25D366;
     color: #ffffff !important;
-    border-radius: 50px;
+    border-radius: 6px;
     font-size: 0.92rem;
     font-weight: 600;
     text-decoration: none;
@@ -679,7 +742,7 @@ body.package-detail-page footer {
     color: inherit;
     background: #FAF8F5;
     border: 1px solid #ECE7DF;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -762,8 +825,21 @@ body.package-detail-page footer {
         gap: 2rem;
     }
 
-    .pkg-intro-media img {
+    .pkg-intro-media > img {
         height: 280px;
+    }
+
+    .polaroid-stack {
+        max-width: 360px;
+        gap: 1.25rem;
+    }
+
+    .polaroid-img-wrap img {
+        height: 180px;
+    }
+
+    .itinerary-polaroids-aside {
+        margin-bottom: 1.75rem;
     }
 
     .pkg-itinerary-grid {
@@ -800,7 +876,7 @@ body.package-detail-page footer {
 
     .pkg-editorial-canvas {
         padding: 2rem 1.25rem;
-        border-radius: 12px;
+        border-radius: 6px;
         margin-top: 0.75rem;
     }
 
@@ -821,7 +897,12 @@ body.package-detail-page footer {
     }
 
     .itinerary-day-title {
-        font-size: 1.15rem;
+        font-size: 1.24rem;
+    }
+
+    .itinerary-day-badge {
+        font-size: 0.78rem;
+        padding: 0.24rem 0.65rem;
     }
 
     .itinerary-day-bullets li {
@@ -830,5 +911,71 @@ body.package-detail-page footer {
 
     .safari-summary-wrapper {
         padding: 1.35rem;
+    }
+
+    .itinerary-polaroids-aside {
+        margin-bottom: 1.5rem;
+    }
+
+    .polaroid-stack {
+        max-width: 340px;
+        gap: 1.15rem;
+    }
+
+    .polaroid-card {
+        padding: 9px 9px 16px 9px;
+    }
+
+    .polaroid-card--top,
+    .polaroid-card--tilt-left {
+        transform: rotate(-1.2deg);
+    }
+
+    .polaroid-card--bottom,
+    .polaroid-card--tilt-right {
+        transform: rotate(1deg);
+    }
+
+    .polaroid-img-wrap img {
+        height: 175px;
+    }
+
+    .polaroid-caption {
+        font-size: 0.76rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .itinerary-day-title {
+        font-size: 1.18rem;
+    }
+
+    .itinerary-polaroids-aside .polaroid-stack,
+    .polaroid-stack {
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .polaroid-card {
+        padding: 8px 8px 15px 8px;
+    }
+
+    .polaroid-card--top,
+    .polaroid-card--tilt-left {
+        transform: rotate(-0.8deg);
+    }
+
+    .polaroid-card--bottom,
+    .polaroid-card--tilt-right {
+        transform: rotate(0.8deg);
+    }
+
+    .polaroid-img-wrap img {
+        height: 160px;
+    }
+
+    .polaroid-caption {
+        font-size: 0.72rem;
+        margin-top: 0.4rem;
     }
 }

@@ -35,7 +35,7 @@
     width: 100%;
     aspect-ratio: 3 / 4;
     max-width: 360px;
-    border-radius: 18px;
+    border-radius: 6px;
     overflow: hidden;
     box-shadow:
         0 12px 40px rgba(0, 0, 0, 0.15),
@@ -89,13 +89,14 @@
 
 .dest-showcase__tagline {
     display: block;
-    font-family: var(--font-body, 'Inter', sans-serif);
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
+    font-family: var(--font-accent, 'Midate', cursive);
+    font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    text-transform: none;
     color: #D4A017;
-    margin-bottom: 0.4rem;
+    line-height: 1.25;
+    margin-bottom: 0.35rem;
 }
 
 .dest-showcase__name {
