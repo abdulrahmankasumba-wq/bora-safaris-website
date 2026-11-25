@@ -49,70 +49,40 @@
         </div>
     </header>
 
-    <!-- Floating Collapsible "ON THIS PAGE" Navigation Component -->
-    <aside class="floating-toc" id="floatingToc" aria-label="On this page chapter navigation">
-        <button class="floating-toc-tab" id="floatingTocTab" aria-expanded="false" aria-controls="floatingTocPanel"
-            aria-label="Toggle Table of Contents">
-            <span class="floating-toc-tab-icon"><i class="fas fa-compass"></i></span>
-            <span class="floating-toc-tab-text">ON THIS PAGE</span>
-            <span class="floating-toc-tab-arrow"><i class="fas fa-chevron-right"></i></span>
+    <!-- Discreet In-Page Navigation Component -->
+    <div class="inpage-nav" id="inpageNav" aria-label="In-page section navigation">
+        <button class="inpage-nav-toggle" id="inpageNavToggle" aria-expanded="false" aria-controls="inpageNavPanel"
+            aria-label="Table of contents: On this page" title="On this page">
+            <i class="fas fa-list-ul inpage-nav-icon"></i>
+            <span class="inpage-nav-dot" aria-hidden="true"></span>
         </button>
 
-        <div class="floating-toc-panel" id="floatingTocPanel" role="region" aria-label="Table of Contents Links">
-            <div class="floating-toc-header">
-                <div class="floating-toc-header-title">
-                    <i class="fas fa-compass"></i>
-                    <span>CHAPTERS</span>
-                </div>
-                <button class="floating-toc-close" id="floatingTocClose" aria-label="Close chapter menu">
+        <div class="inpage-nav-panel" id="inpageNavPanel" role="region" aria-label="On this page sections">
+            <div class="inpage-nav-header">
+                <span class="inpage-nav-title">On This Page</span>
+                <button class="inpage-nav-close" id="inpageNavClose" aria-label="Close section menu">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <nav class="floating-toc-nav">
-                <a href="#about-bora" class="floating-toc-link active" data-index="1">
-                    <span class="toc-num">01</span>
-                    <span class="toc-text">About Bora</span>
-                </a>
-                <a href="#story-behind-bora" class="floating-toc-link" data-index="2">
-                    <span class="toc-num">02</span>
-                    <span class="toc-text">The Story Behind Bora</span>
-                </a>
-                <a href="#our-people" class="floating-toc-link" data-index="3">
-                    <span class="toc-num">03</span>
-                    <span class="toc-text">Meet the Team</span>
-                </a>
-                <a href="#regional-roots" class="floating-toc-link" data-index="4">
-                    <span class="toc-num">04</span>
-                    <span class="toc-text">Uganda &amp; Rwanda</span>
-                </a>
-                <a href="#travel-with-purpose" class="floating-toc-link" data-index="5">
-                    <span class="toc-num">05</span>
-                    <span class="toc-text">Travel With Purpose</span>
-                </a>
-                <a href="#traveller-stories" class="floating-toc-link" data-index="6">
-                    <span class="toc-num">06</span>
-                    <span class="toc-text">Traveller Stories</span>
-                </a>
+            <nav class="inpage-nav-list">
+                <a href="#about-bora" class="inpage-nav-link active">About Bora</a>
+                <a href="#story-behind-bora" class="inpage-nav-link">The Story Behind Bora</a>
+                <a href="#our-people" class="inpage-nav-link">Meet the Team</a>
+                <a href="#regional-roots" class="inpage-nav-link">Uganda &amp; Rwanda</a>
+                <a href="#travel-with-purpose" class="inpage-nav-link">Travel With Purpose</a>
+                <a href="#traveller-stories" class="inpage-nav-link">Stories From Our Travellers</a>
+                <a href="#final-cta" class="inpage-nav-link">Start Your Journey</a>
             </nav>
         </div>
-        <div class="floating-toc-backdrop" id="floatingTocBackdrop"></div>
-    </aside>
+    </div>
 
     <main class="about-page-main">
 
-        <!-- 1. HERO SECTION: More Than a Safari -->
+        <!-- 1. HERO SECTION: Compact Page Header (Aligned with Destinations Page) -->
         <section class="about-hero">
-            <div class="about-hero-bg" style="background-image: url('tour image/hero/giraffe sunset.jpeg');"></div>
-            <div class="about-hero-overlay"></div>
-            <div class="about-hero-content container animate-on-scroll">
-                <span class="about-hero-eyebrow">A JOURNEY INTO THE HEART OF EAST AFRICA</span>
-                <h1 class="about-hero-title">More Than a Safari.</h1>
-                <p class="about-hero-subtitle">
-                    Discover the people, passion and purpose behind Bora East Africa Safaris.
-                </p>
-                <div class="about-hero-action">
-                    <a href="#about-bora" class="btn btn-primary hero-cta">Discover Our Story</a>
-                </div>
+            <div class="about-hero-content container">
+                <h1>About Bora East Africa Safaris</h1>
+                <p>Discover the people, passion and purpose behind Bora East Africa Safaris.</p>
             </div>
         </section>
 
@@ -125,13 +95,19 @@
                         <h2 class="editorial-heading">Born From a Love for the Wild</h2>
                         <div class="editorial-gold-divider"></div>
                         <p class="editorial-lead">
-                            At Bora East Africa Safaris, we believe travel is more than ticking off destinations. It is about quiet dawn encounters on the savannah, genuine cultural connections, and discovering the untamed spirit of East Africa at your own pace.
+                            At Bora East Africa Safaris, we believe travel is more than ticking off destinations. It is
+                            about quiet dawn encounters on the savannah, genuine cultural connections, and discovering
+                            the untamed spirit of East Africa at your own pace.
                         </p>
                         <p>
-                            Headquartered in Kampala, Uganda, we curate private, tailor-made safari expeditions across <strong>Uganda and Rwanda</strong>. From gorilla trekking in ancient mist-shrouded rainforests to wildlife game drives and serene crater lake retreats, our journeys are handcrafted to be intimate, accessible, and deeply personal.
+                            Headquartered in Kampala, Uganda, we curate private, tailor-made safari expeditions across
+                            <strong>Uganda and Rwanda</strong>. From gorilla trekking in ancient mist-shrouded
+                            rainforests to wildlife game drives and serene crater lake retreats, our journeys are
+                            handcrafted to be intimate, accessible, and deeply personal.
                         </p>
                         <p>
-                            We listen first, personalize every itinerary, and deliver journeys that stay with you long after you return home.
+                            We listen first, personalize every itinerary, and deliver journeys that stay with you long
+                            after you return home.
                         </p>
                     </div>
 
@@ -140,7 +116,8 @@
                             <img src="tour image/lake bunyonyi retreat.jpg"
                                 alt="Serene view of Lake Bunyonyi hills in Uganda, showcasing the natural beauty of East Africa"
                                 loading="lazy">
-                            <span class="photo-caption-strip"><i class="fas fa-map-marker-alt"></i> The breathtaking terraces of Lake Bunyonyi, Uganda</span>
+                            <span class="photo-caption-strip"><i class="fas fa-map-marker-alt"></i> The breathtaking
+                                terraces of Lake Bunyonyi, Uganda</span>
                         </div>
                     </div>
                 </div>
@@ -226,25 +203,39 @@
 
                         <div class="editorial-prose">
                             <p class="story-opener">
-                                Bora East Africa Safaris grew from a straightforward belief: extraordinary African safari experiences should be personal, authentic, and free from unnecessary complication or inflated costs.
+                                Bora East Africa Safaris grew from a straightforward belief: extraordinary African
+                                safari experiences should be personal, authentic, and free from unnecessary complication
+                                or inflated costs.
                             </p>
                             <p>
-                                At the heart of this vision is <strong>Kakimba Harunah</strong>. With over 15 years in the East African tourism industry, Kakimba began with a passion for education and nature before dedicating his career to leading expeditions across Uganda, Rwanda, Kenya, and Tanzania.
+                                At the heart of this vision is <strong>Kakimba Harunah</strong>. With over 15 years in
+                                the East African tourism industry, Kakimba began with a passion for education and nature
+                                before dedicating his career to leading expeditions across Uganda, Rwanda, Kenya, and
+                                Tanzania.
                             </p>
                             <p>
-                                Over more than a decade in the field, he came to understand that a truly memorable safari is never just about vehicle hours or checking animals off a list. It is about understanding the delicate rhythms of the savannah, listening to the elders in rural villages, feeling the spray of the Victoria Nile, and sharing hearty laughter around an evening campfire.
+                                Over more than a decade in the field, he came to understand that a truly memorable
+                                safari is never just about vehicle hours or checking animals off a list. It is about
+                                understanding the delicate rhythms of the savannah, listening to the elders in rural
+                                villages, feeling the spray of the Victoria Nile, and sharing hearty laughter around an
+                                evening campfire.
                             </p>
 
                             <!-- Pull Quote -->
                             <div class="editorial-pullquote">
                                 <blockquote>
-                                    “We don't just want our guests to see East Africa through a vehicle window. We want them to feel its heartbeat and leave with a story worth telling.”
+                                    “We don't just want our guests to see East Africa through a vehicle window. We want
+                                    them to feel its heartbeat and leave with a story worth telling.”
                                 </blockquote>
                                 <cite>— Kakimba Harunah, Founder</cite>
                             </div>
 
                             <p>
-                                After years of navigating national parks and managing private tours, Kakimba founded Bora East Africa Safaris to offer a warmer, more responsive kind of safari company. Today, Bora remains grounded in that field-first ethos: handcrafted routes, respectful wildlife stewardship, and travel that enriches both the visitor and the local host communities.
+                                After years of navigating national parks and managing private tours, Kakimba founded
+                                Bora East Africa Safaris to offer a warmer, more responsive kind of safari company.
+                                Today, Bora remains grounded in that field-first ethos: handcrafted routes, respectful
+                                wildlife stewardship, and travel that enriches both the visitor and the local host
+                                communities.
                             </p>
                         </div>
                     </div>
@@ -269,10 +260,14 @@
                         <div class="editorial-gold-divider"></div>
 
                         <p class="team-intro-text">
-                            Behind every smooth game drive, well-timed lodge arrival, and thrilling primate track is a close-knit group of professional local guides, drivers, operations coordinators, and community partners who love what they do.
+                            Behind every smooth game drive, well-timed lodge arrival, and thrilling primate track is a
+                            close-knit group of professional local guides, drivers, operations coordinators, and
+                            community partners who love what they do.
                         </p>
                         <p>
-                            Born and raised across Uganda, our driver-guides possess an intuitive knowledge of animal behavior, seasonal migrations, and local traditions. They are not merely drivers; they are storytellers, safety stewards, and warm hosts who treat every traveler like family.
+                            Born and raised across Uganda, our driver-guides possess an intuitive knowledge of animal
+                            behavior, seasonal migrations, and local traditions. They are not merely drivers; they are
+                            storytellers, safety stewards, and warm hosts who treat every traveler like family.
                         </p>
 
                         <div class="team-values-row">
@@ -302,7 +297,9 @@
                     <h2 class="editorial-heading">Rooted in Uganda. Connected to Rwanda.</h2>
                     <div class="editorial-gold-divider mx-auto"></div>
                     <p class="section-description">
-                        East Africa’s greatest biodiversity lies along the Albertine Rift. We specialize where our roots run deepest, connecting Uganda’s expansive savannahs and rainforests with Rwanda’s majestic volcanic peaks.
+                        East Africa’s greatest biodiversity lies along the Albertine Rift. We specialize where our roots
+                        run deepest, connecting Uganda’s expansive savannahs and rainforests with Rwanda’s majestic
+                        volcanic peaks.
                     </p>
                 </div>
 
@@ -319,9 +316,13 @@
                             <span class="regional-tagline">The Pearl of Africa</span>
                             <h3 class="regional-title">Wild, Diverse &amp; Unrivaled</h3>
                             <p>
-                                Home to half the world's remaining mountain gorillas in Bwindi, classic savannah game drives across Queen Elizabeth and Murchison Falls, chimpanzee tracking in Kibale, and the thundering Source of the Nile. Uganda offers unparalleled safari diversity across 10 distinct national parks.
+                                Home to half the world's remaining mountain gorillas in Bwindi, classic savannah game
+                                drives across Queen Elizabeth and Murchison Falls, chimpanzee tracking in Kibale, and
+                                the thundering Source of the Nile. Uganda offers unparalleled safari diversity across 10
+                                distinct national parks.
                             </p>
-                            <a href="destinations.html" class="regional-text-link">Explore Uganda Guides <i class="fas fa-arrow-right"></i></a>
+                            <a href="destinations.html" class="regional-text-link">Explore Uganda Guides <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -336,9 +337,12 @@
                             <span class="regional-tagline">Land of a Thousand Hills</span>
                             <h3 class="regional-title">Pristine, Elevated &amp; Iconic</h3>
                             <p>
-                                An iconic destination renowned for mountain gorilla trekking under the dramatic Virunga volcanoes, ancient canopy walks through the montane rainforest of Nyungwe, Big Five savannah safaris in Akagera, and a triumphant modern conservation story.
+                                An iconic destination renowned for mountain gorilla trekking under the dramatic Virunga
+                                volcanoes, ancient canopy walks through the montane rainforest of Nyungwe, Big Five
+                                savannah safaris in Akagera, and a triumphant modern conservation story.
                             </p>
-                            <a href="destinations.html" class="regional-text-link">Explore Rwanda Guides <i class="fas fa-arrow-right"></i></a>
+                            <a href="destinations.html" class="regional-text-link">Explore Rwanda Guides <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -346,8 +350,10 @@
                 <!-- Subtle Custom Circuits Note -->
                 <div class="custom-circuit-bar">
                     <i class="fas fa-compass"></i>
-                    <span>Looking for a cross-border expedition combining both countries? We organize seamless private road and flight transfers.</span>
-                    <a href="contact.html?interest=Cross-Border%20Safari" class="btn btn-secondary btn-sm">Talk to an Expert</a>
+                    <span>Looking for a cross-border expedition combining both countries? We organize seamless private
+                        road and flight transfers.</span>
+                    <a href="contact.html?interest=Cross-Border%20Safari" class="btn btn-secondary btn-sm">Talk to an
+                        Expert</a>
                 </div>
             </div>
         </section>
@@ -361,7 +367,9 @@
                         <h2 class="editorial-heading">Travel With Purpose</h2>
                         <div class="editorial-gold-divider"></div>
                         <p class="purpose-lead">
-                            We believe that the wild places we explore must be protected for generations to come. Responsible travel is not an add-on at Bora—it is woven into how we plan, guide, and operate every journey.
+                            We believe that the wild places we explore must be protected for generations to come.
+                            Responsible travel is not an add-on at Bora—it is woven into how we plan, guide, and operate
+                            every journey.
                         </p>
 
                         <!-- Three Clear Commitments -->
@@ -370,7 +378,8 @@
                                 <div class="commitment-icon"><i class="fas fa-hands-helping"></i></div>
                                 <div class="commitment-text">
                                     <h4>Community First</h4>
-                                    <p>We partner with village homestays, employ local scouts and drivers, and ensure safari revenues directly support families living around national parks.</p>
+                                    <p>We partner with village homestays, employ local scouts and drivers, and ensure
+                                        safari revenues directly support families living around national parks.</p>
                                 </div>
                             </div>
 
@@ -378,7 +387,8 @@
                                 <div class="commitment-icon"><i class="fas fa-leaf"></i></div>
                                 <div class="commitment-text">
                                     <h4>Wildlife &amp; Habitat Respect</h4>
-                                    <p>Strict adherence to official wildlife tracking distances, park speed limits, and leave-no-trace wilderness protocols that prioritize animal welfare.</p>
+                                    <p>Strict adherence to official wildlife tracking distances, park speed limits, and
+                                        leave-no-trace wilderness protocols that prioritize animal welfare.</p>
                                 </div>
                             </div>
 
@@ -386,7 +396,8 @@
                                 <div class="commitment-icon"><i class="fas fa-heart"></i></div>
                                 <div class="commitment-text">
                                     <h4>Living Cultural Heritage</h4>
-                                    <p>Facilitating authentic, respectful interactions with local communities like our Nkonya village partners—sharing culinary traditions, dance, and daily life.</p>
+                                    <p>Facilitating authentic, respectful interactions with local communities like our
+                                        Nkonya village partners—sharing culinary traditions, dance, and daily life.</p>
                                 </div>
                             </div>
                         </div>
@@ -398,7 +409,8 @@
                                 alt="Elephant peacefully grazing in Murchison Falls National Park, representing harmony between wildlife and tourism"
                                 loading="lazy">
                             <div class="purpose-quote-card">
-                                <p>“Tourism should create opportunities for the people who protect these wild lands.”</p>
+                                <p>“Tourism should create opportunities for the people who protect these wild lands.”
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -414,7 +426,8 @@
                     <h2 class="editorial-heading">Stories From Our Travellers</h2>
                     <div class="editorial-gold-divider mx-auto"></div>
                     <p class="section-description">
-                        Every safari is unique. Here is what guests from around the world have shared about their time exploring with Bora Safaris.
+                        Every safari is unique. Here is what guests from around the world have shared about their time
+                        exploring with Bora Safaris.
                     </p>
                 </div>
 
@@ -423,7 +436,9 @@
                     <div class="testimonial-editorial-card">
                         <div class="testimonial-quote-mark"><i class="fas fa-quote-left"></i></div>
                         <p class="testimonial-body">
-                            “From our initial itinerary consultation to coming eye-to-eye with a silverback in Bwindi, Kakimba and the Bora team delivered beyond all expectations. Professional, deeply knowledgeable, and wonderfully welcoming.”
+                            “From our initial itinerary consultation to coming eye-to-eye with a silverback in Bwindi,
+                            Kakimba and the Bora team delivered beyond all expectations. Professional, deeply
+                            knowledgeable, and wonderfully welcoming.”
                         </p>
                         <div class="testimonial-byline">
                             <div class="byline-avatar"><i class="fas fa-user-circle"></i></div>
@@ -438,7 +453,9 @@
                     <div class="testimonial-editorial-card">
                         <div class="testimonial-quote-mark"><i class="fas fa-quote-left"></i></div>
                         <p class="testimonial-body">
-                            “The Queen Elizabeth game drive and Kazinga Channel boat safari were unforgettable. Locating the tree-climbing lions in Ishasha was pure magic. We felt safe, respected, and like family throughout the entire expedition.”
+                            “The Queen Elizabeth game drive and Kazinga Channel boat safari were unforgettable. Locating
+                            the tree-climbing lions in Ishasha was pure magic. We felt safe, respected, and like family
+                            throughout the entire expedition.”
                         </p>
                         <div class="testimonial-byline">
                             <div class="byline-avatar"><i class="fas fa-user-circle"></i></div>
@@ -453,7 +470,9 @@
                     <div class="testimonial-editorial-card">
                         <div class="testimonial-quote-mark"><i class="fas fa-quote-left"></i></div>
                         <p class="testimonial-body">
-                            “Combining Uganda's wildlife with the Nkonya village homestay gave us the most authentic cultural immersion we have ever experienced. Kakimba's love for his country is contagious. Bora Safaris is the real deal.”
+                            “Combining Uganda's wildlife with the Nkonya village homestay gave us the most authentic
+                            cultural immersion we have ever experienced. Kakimba's love for his country is contagious.
+                            Bora Safaris is the real deal.”
                         </p>
                         <div class="testimonial-byline">
                             <div class="byline-avatar"><i class="fas fa-user-circle"></i></div>
@@ -474,7 +493,8 @@
                 <span class="cta-eyebrow">START PLANNING</span>
                 <h2>Your East African Story Starts Here.</h2>
                 <p>
-                    Let us help you discover the beauty, wildlife and culture of East Africa through journeys that stay with you long after you return home.
+                    Let us help you discover the beauty, wildlife and culture of East Africa through journeys that stay
+                    with you long after you return home.
                 </p>
                 <div class="cta-buttons-wrap">
                     <a href="safaris.html" class="btn btn-primary hero-cta">Explore Our Safaris</a>
@@ -532,72 +552,61 @@
     <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const toc = document.getElementById('floatingToc');
-            const tocTab = document.getElementById('floatingTocTab');
-            const tocPanel = document.getElementById('floatingTocPanel');
-            const tocClose = document.getElementById('floatingTocClose');
-            const tocBackdrop = document.getElementById('floatingTocBackdrop');
-            const tocLinks = document.querySelectorAll('.floating-toc-link');
-            const sections = document.querySelectorAll('.scroll-target');
+            const nav = document.getElementById('inpageNav');
+            const toggle = document.getElementById('inpageNavToggle');
+            const panel = document.getElementById('inpageNavPanel');
+            const closeBtn = document.getElementById('inpageNavClose');
+            const links = document.querySelectorAll('.inpage-nav-link');
+            const sections = document.querySelectorAll('.scroll-target, #final-cta');
 
-            if (!toc || !tocTab || !tocPanel) return;
+            if (!nav || !toggle || !panel) return;
 
-            let closeTimeout = null;
-
-            function openToc() {
-                clearTimeout(closeTimeout);
-                toc.classList.add('is-open');
-                tocTab.setAttribute('aria-expanded', 'true');
+            function openNav() {
+                nav.classList.add('is-open');
+                toggle.setAttribute('aria-expanded', 'true');
             }
 
-            function closeToc() {
-                toc.classList.remove('is-open');
-                tocTab.setAttribute('aria-expanded', 'false');
+            function closeNav() {
+                nav.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
             }
 
-            // Desktop Hover interactions
-            const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-
-            if (!isTouch && window.matchMedia('(hover: hover)').matches) {
-                toc.addEventListener('mouseenter', openToc);
-                toc.addEventListener('mouseleave', () => {
-                    closeTimeout = setTimeout(closeToc, 220);
-                });
-            }
-
-            // Click / Tap handler for tab button
-            tocTab.addEventListener('click', (e) => {
+            // Click toggle button to open/close
+            toggle.addEventListener('click', (e) => {
                 e.stopPropagation();
-                if (toc.classList.contains('is-open')) {
-                    closeToc();
+                if (nav.classList.contains('is-open')) {
+                    closeNav();
                 } else {
-                    openToc();
+                    openNav();
                 }
             });
 
-            // Close button
-            if (tocClose) {
-                tocClose.addEventListener('click', (e) => {
+            // Close button inside panel
+            if (closeBtn) {
+                closeBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    closeToc();
+                    closeNav();
+                    toggle.focus();
                 });
             }
 
-            // Backdrop click
-            if (tocBackdrop) {
-                tocBackdrop.addEventListener('click', closeToc);
-            }
+            // Close when clicking outside panel
+            document.addEventListener('click', (e) => {
+                if (nav.classList.contains('is-open') && !nav.contains(e.target)) {
+                    closeNav();
+                }
+            });
 
             // Escape key support
             document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && toc.classList.contains('is-open')) {
-                    closeToc();
-                    tocTab.focus();
+                if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+                    closeNav();
+                    toggle.focus();
                 }
             });
 
-            // Smooth scrolling to sections with sticky header offset
-            tocLinks.forEach(link => {
+            // Smooth scrolling to sections with fixed header offset and automatic collapse
+            links.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
                     const targetId = link.getAttribute('href');
@@ -612,9 +621,9 @@
                             behavior: 'smooth'
                         });
 
-                        closeToc();
+                        closeNav();
 
-                        tocLinks.forEach(l => l.classList.remove('active'));
+                        links.forEach(l => l.classList.remove('active'));
                         link.classList.add('active');
                     }
                 });
@@ -631,7 +640,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const id = entry.target.getAttribute('id');
-                        tocLinks.forEach(link => {
+                        links.forEach(link => {
                             if (link.getAttribute('href') === `#${id}`) {
                                 link.classList.add('active');
                             } else {
